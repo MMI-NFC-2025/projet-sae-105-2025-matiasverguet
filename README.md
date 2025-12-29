@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : Verguet-Bailly
+- PRÉNOM : Matias
+- GROUPE : C2
 - URL du site :
 - URL FIGMA :

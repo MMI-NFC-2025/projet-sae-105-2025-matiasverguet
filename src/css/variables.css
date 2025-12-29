@@ -1,0 +1,31 @@
+/* ===== VARIABLES DE THÈME ===== */
+
+[data-theme="Mode 1"] {
+    /* color */
+    --blanc: #ffffff;
+    --frise: #9a9393;
+    --gris: #d9d9d9;
+    --noir: #000000;
+}
+
+:root {
+    /* Couleurs du thème */
+    --blanc: #ffffff;
+    --frise: #9a9393;
+    --gris: #d9d9d9;
+    --noir: #000000;
+    
+    /* Couleurs système */
+    --color-primary: #000000;
+    --color-secondary: #ffffff;
+    --color-gray: #666666;
+    --color-light-gray: #f5f5f5;
+    
+    /* Polices */
+    --font-main: 'Arial', sans-serif;
+    --font-logo: 'Jacques Francois', serif;
+    --font-hero: 'Alkalami', serif;
+    
+    /* Transitions */
+    --transition: all 0.3s ease;
+}
