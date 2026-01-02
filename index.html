@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=393, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>FISSIONNAIRE - Lise Meitner</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <script src="src/js/menu.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -25,27 +24,26 @@
                 <!-- Menu à remplir -->
             </ul>
         </nav>
-    </header>
-
-    <!-- Menu Burger Overlay -->
-    <nav id="menu" class="menu-overlay" aria-hidden="true">
-        <div class="menu-header">
-            <img src="/assets/img/icon/logo.svg" alt="Logo" class="menu-logo">
-            <button class="menu-close-btn" aria-label="Fermer le menu">
-                <img src="/assets/img/icon/croix.svg" alt="Fermer" class="close-icon">
-            </button>
+        <!-- Menu Burger Overlay -->
+        <div class="menu" aria-hidden="true">
+            <div class="menu__header">
+                <img src="/assets/img/icon/logo.svg" alt="Logo" class="menu__logo">
+                <button class="menu__close" aria-label="Fermer le menu">
+                    <img src="/assets/img/icon/croix.svg" alt="Fermer" class="menu__close-icon">
+                </button>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#accueil" class="menu__link">Lise Meitner</a></li>
+                <li class="menu__item"><a href="#theorie" class="menu__link">La fission nucléaire</a></li>
+                <li class="menu__item"><a href="#litterature" class="menu__link">Les femmes de science<br>dans la littérature</a></li>
+                <li class="menu__item"><a href="#bu" class="menu__link">Objet de la BU</a></li>
+                <li class="menu__item"><a href="#films" class="menu__link">Films et séries</a></li>
+                <li class="menu__item"><a href="#autres-projets" class="menu__link">Autres projets</a></li>
+                <li class="menu__item"><a href="#glossaire" class="menu__link">Glossaire</a></li>
+                <li class="menu__item"><a href="#apropos" class="menu__link">A propos</a></li>
+            </ul>
         </div>
-        <ul class="menu-list">
-            <li><a href="#lise-meitner">LISE MEITNER</a></li>
-            <li><a href="#fission-nucleaire">LA FISSION NUCLÉAIRE</a></li>
-            <li><a href="#litterature">LES FEMMES DE SCIENCE<br>DANS LA LITTÉRATURE</a></li>
-            <li><a href="#objet-bu">OBJET DE LA BU</a></li>
-            <li><a href="#films-series">FILMS ET SÉRIES</a></li>
-            <li><a href="#autres-projets">AUTRES PROJETS</a></li>
-            <li><a href="#glossaire">GLOSSAIRE</a></li>
-            <li><a href="#a-propos">A PROPOS</a></li>
-        </ul>
-    </nav>
+    </header>
 
     <!-- Hero Section - Lise Meitner -->
     <section class="hero" id="accueil">

@@ -45,11 +45,28 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Menu toggle functionality
-const menuToggle = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('.nav-menu');
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuOverlay = document.querySelector('.menu');
+    const menuClose = document.querySelector('.menu__close');
 
-if (menuToggle) {
-    menuToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
+    function openMenu() {
+        menuOverlay.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+        menuOverlay.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    if (menuToggle && menuOverlay) {
+        menuToggle.addEventListener('click', openMenu);
+    }
+    if (menuClose && menuOverlay) {
+        menuClose.addEventListener('click', closeMenu);
+    }
+    // Fermer le menu si on clique sur un lien du menu
+    document.querySelectorAll('.menu__link').forEach(link => {
+        link.addEventListener('click', closeMenu);
     });
-}
+});

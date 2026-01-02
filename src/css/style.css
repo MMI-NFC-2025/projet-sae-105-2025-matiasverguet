@@ -37,7 +37,7 @@ button {
 
 /* ===== HEADER ===== */
 /* ===== MENU BURGER OVERLAY ===== */
-.menu-overlay {
+.menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -54,11 +54,11 @@ button {
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
-.menu-overlay[aria-hidden="false"] {
+.menu[aria-hidden="false"] {
     opacity: 1;
     pointer-events: auto;
 }
-.menu-header {
+.menu__header {
     width: 100%;
     display: flex;
     align-items: center;
@@ -67,49 +67,56 @@ button {
     gap: 1.5rem;
     margin-top: 100px;
 }
-.menu-logo {
+.menu__logo {
     width: 37.25px;
     height: 39px;
 }
-.menu-close-btn {
+.menu__close {
     margin-left: 1rem;
     background: none;
     border: none;
     cursor: pointer;
 }
-.close-icon {
+.menu__close-icon {
     width: 20px;
     height: 20px;
 }
-.menu-list {
+/* Menu burger overlay corrections */
+.menu__list {
     list-style: none;
-    width: 100%;
+    width: 100vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding-right: 2.5rem;
-    padding-left: 0;
-    gap: 45px;
-    margin-top: 30px;
+    padding: 0;
+    gap: 2.2rem;
+    margin-top: 0;
 }
-.menu-list li {
-    text-align: center;
-}
-.menu-list a {
+.menu__item {
+    text-align: right;
+    width: 100%;
+/* ...existing code... */
     color: #fff;
-    font-family: 'Inria Sans', Arial, sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 0.99;
-    letter-spacing: -1%;
+    font-family: 'Inria Sans', Arial, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    line-height: 0.99 !important;
+    letter-spacing: -1% !important;
     text-transform: uppercase;
     transition: color 0.2s;
+    display: block;
+    width: 90vw;
+    max-width: 340px;
+    padding: 0.7rem 0.5rem;
+    text-align: right;
+    word-break: break-word;
+    white-space: pre-line;
+    margin: 0 auto;
+    overflow-wrap: break-word;
 }
-.menu-list a:hover {
-    color: var(--color-secondary, #ccc);
-}
+/* bugfix: suppression accolade orpheline et règle vide */
 header {
     background-color: var(--color-primary);
     color: var(--color-secondary);
