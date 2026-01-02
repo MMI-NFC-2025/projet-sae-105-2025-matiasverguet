@@ -1,0 +1,458 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@400;700&display=swap');
+@import url('variables.css');
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.menu[aria-hidden="false"] {
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 1.5rem 0 1.5rem;
+    gap: 1.5rem;
+    margin-top: 100px;
+}
+.menu__logo {
+    width: 37.25px;
+    height: 39px;
+}
+.menu__close {
+    margin-left: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.menu__close-icon {
+    width: 20px;
+    height: 20px;
+}
+.menu__list {
+    list-style: none;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+    gap: 2.2rem;
+    margin-top: 0;
+}
+.menu__item {
+    text-align: right;
+    width: 100%;
+    color: #fff;
+    font-family: 'Inria Sans', Arial, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    line-height: 0.99 !important;
+    letter-spacing: -1% !important;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    display: block;
+    width: 90vw;
+    max-width: 340px;
+    padding: 0.7rem 0.5rem;
+    text-align: right;
+    word-break: break-word;
+    white-space: pre-line;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+}
+
+.menu__item a {
+    color: #fff !important;
+    text-decoration: none;
+}
+header {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 27.9px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 39px;
+}
+
+.logo-icon {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: var(--font-logo);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.logo-o {
+    height: 1em;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lang-icon {
+    position: absolute;
+    right: calc(29.17px + 24px + 6.6px);
+    height: 25.11px;
+    width: 25.11px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lang-icon:hover {
+    opacity: 0.7;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+    cursor: pointer;
+    transition: var(--transition);
+    position: absolute;
+    right: 29.17px;
+    z-index: 10;
+    background: transparent;
+    border: none;
+}
+
+.menu-icon {
+    width: auto;
+    height: 24px;
+    display: block;
+}
+
+.menu-toggle:hover .menu-icon {
+    opacity: 0.7;
+}
+
+.a-propos-hero {
+    width: 100%;
+    margin: -110px auto 0 auto;
+    padding: 110px 0 0 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.a-propos-img {
+    width: 475px !important;
+    height: 524px !important;
+   
+}
+
+body {
+  background: #fff;
+  color: #111;
+  font-family: 'Inria Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.a-propos-article {
+  max-width: 393px;
+  margin: 0 auto;
+  padding: 0 28px 32px 28px;
+  background: #fff;
+}
+
+.a-propos-content {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.a-propos-content::before {
+  content: '';
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background:var(--gris);
+  border-radius: 50%;
+  bottom: 80px;
+  left: 180px;
+  z-index: -1;
+}
+
+.a-propos-content h1 {
+  font-family: 'Alkalami', serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 99%;
+  letter-spacing: -1%;
+  margin-bottom: 24px;
+}
+
+.a-propos-content h2,
+.a-propos-content h3 {
+  font-family: 'Inria Sans', Arial, sans-serif;
+  font-weight: 700;
+  margin: 24px 0 16px 0;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.a-propos-content h2 {
+  font-size: 24px;
+  letter-spacing: -0.01em;
+}
+
+.a-propos-content h3 {
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: -1%;
+}
+
+.a-propos-content p,
+.a-propos-content li {
+  font-family: 'Inria Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+
+.a-propos-content ul,
+.a-propos-content ol {
+  padding-left: 20px;
+  margin: 12px 0 24px 0;
+}
+
+.a-propos-article strong {
+  font-weight: 700;
+}
+
+.a-propos-article em {
+  font-style: italic;
+}
+
+.a-propos-article blockquote {
+  border-left: 3px solid #eee;
+  padding-left: 12px;
+  color: #666;
+  margin: 0 0 16px 0;
+}
+
+.a-propos-article section {
+  margin-bottom: 32px;
+}
+
+footer {
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: 40px 20px 30px 40px;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 393px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-logo .logo-icon {
+    width: 39px;
+    height: auto;
+}
+
+.footer-logo .logo-text {
+    font-family: 'Jacques Francois', serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    line-height: 1;
+}
+
+.footer-logo .logo-o {
+    width: 15.66px;
+    height: auto;
+    margin: 0 -1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-author,
+.footer-class {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -1%;
+    margin: 0;
+}
+
+.footer-nav h4,
+.footer-contact h4,
+.footer-legal h4,
+.footer-social h4 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1%;
+    margin: 0 0 15px 0;
+    color: var(--frise);
+}
+
+.footer-social h4 {
+    margin: 0 0 8px 0;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -1%;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.footer-nav a:hover {
+    opacity: 0.7;
+}
+
+.footer-contact p,
+.footer-legal p {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -1%;
+    margin: 0 0 8px 0;
+    color: var(--frise);
+}
+
+.footer-contact p:last-child,
+.footer-legal p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-social {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-icons a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 0;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+@media (max-width: 480px) {
+  .a-propos-article {
+    padding: 0 8px 32px 8px;
+  }
+  .a-propos-article h1 {
+    font-size: 26px;
+  }
+  .a-propos-article h2 {
+    font-size: 18px;
+  }
+}

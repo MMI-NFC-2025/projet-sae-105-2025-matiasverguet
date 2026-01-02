@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@400;700&display=swap');
+@import url('variables.css');
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.menu[aria-hidden="false"] {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 1.5rem 0 1.5rem;
+    gap: 1.5rem;
+    margin-top: 100px;
+}
+
+.menu__logo {
+    width: 37.25px;
+    height: 39px;
+}
+
+.menu__close {
+    margin-left: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu__close-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.menu__list {
+    list-style: none;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+    gap: 2.2rem;
+    margin-top: 0;
+}
+
+.menu__item {
+    text-align: right;
+    width: 100%;
+    color: #fff;
+    font-family: 'Inria Sans', Arial, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    line-height: 0.99 !important;
+    letter-spacing: -1% !important;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    display: block;
+    width: 90vw;
+    max-width: 340px;
+    padding: 0.7rem 0.5rem;
+    text-align: right;
+    word-break: break-word;
+    white-space: pre-line;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+}
+
+.menu__item a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 27.9px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 39px;
+}
+
+.logo-icon {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: var(--font-logo);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.logo-o {
+    height: 1em;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lang-icon {
+    position: absolute;
+    right: calc(29.17px + 24px + 6.6px);
+    height: 25.11px;
+    width: 25.11px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lang-icon:hover {
+    opacity: 0.7;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+    cursor: pointer;
+    transition: var(--transition);
+    position: absolute;
+    right: 29.17px;
+    z-index: 10;
+    background: transparent;
+    border: none;
+}
+
+.menu-icon {
+    width: auto;
+    height: 24px;
+    display: block;
+}
+
+.menu-toggle:hover .menu-icon {
+    opacity: 0.7;
+}
+
+.glossaire-main {
+    max-width: 393px;
+    margin: 0 auto;
+}
+
+.glossaire-hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+.glossaire-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.glossaire-header {
+    padding: 32px 28px;
+    text-align: left 39px;
+}
+
+.glossaire-header h1 {
+    font-family: 'Alkalami', serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -1%;
+    margin: 0;
+}
+
+.glossaire-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 28px 40px 28px;
+}
+
+.glossaire-item {
+    width: 345px;
+    height: 315px;
+    background-color: var(--gris);
+    border-radius: 27px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.glossaire-item h2 {
+    font-family: 'Alkalami', serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -1%;
+    margin: 0;
+    color: var(--noir);
+}
+
+.glossaire-item img {
+    width: 161px;
+    height: 133px;
+    object-fit: cover;
+    border-radius: 8px;
+    align-self: flex-start;
+}
+
+.glossaire-item p {
+    font-family: 'Inria Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1%;
+    color: var(--noir);
+    margin: 0;
+}
+
+footer {
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: 40px 20px 30px 40px;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 393px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-logo .logo-icon {
+    width: 39px;
+    height: auto;
+}
+
+.footer-logo .logo-text {
+    font-family: 'Jacques Francois', serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    line-height: 1;
+}
+
+.footer-logo .logo-o {
+    width: 15.66px;
+    height: auto;
+    margin: 0 -1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-author,
+.footer-class {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -1%;
+    margin: 0;
+}
+
+.footer-nav h4,
+.footer-contact h4,
+.footer-legal h4,
+.footer-social h4 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1%;
+    margin: 0 0 15px 0;
+    color: var(--frise);
+}
+
+.footer-social h4 {
+    margin: 0 0 8px 0;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -1%;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.footer-nav a:hover {
+    opacity: 0.7;
+}
+
+.footer-contact p,
+.footer-legal p {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -1%;
+    margin: 0 0 8px 0;
+    color: var(--frise);
+}
+
+.footer-contact p:last-child,
+.footer-legal p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-social {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-icons a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 0;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .glossaire-container {
+        padding: 0 8px 32px 8px;
+    }
+}
