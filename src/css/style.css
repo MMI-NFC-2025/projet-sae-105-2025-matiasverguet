@@ -36,6 +36,80 @@ button {
 }
 
 /* ===== HEADER ===== */
+/* ===== MENU BURGER OVERLAY ===== */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.menu-overlay[aria-hidden="false"] {
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 1.5rem 0 1.5rem;
+    gap: 1.5rem;
+    margin-top: 100px;
+}
+.menu-logo {
+    width: 37.25px;
+    height: 39px;
+}
+.menu-close-btn {
+    margin-left: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.close-icon {
+    width: 20px;
+    height: 20px;
+}
+.menu-list {
+    list-style: none;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 2.5rem;
+    padding-left: 0;
+    gap: 45px;
+    margin-top: 30px;
+}
+.menu-list li {
+    text-align: center;
+}
+.menu-list a {
+    color: #fff;
+    font-family: 'Inria Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 0.99;
+    letter-spacing: -1%;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+.menu-list a:hover {
+    color: var(--color-secondary, #ccc);
+}
 header {
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -679,14 +753,14 @@ footer {
     }
 
     .hero {
-        height: 100vh;
-    }
-
-    .carousel-card {
-        min-width: 320px;
-    }
-
-    .footer-container {
+        position: absolute;
+        top: 286px;
+        right: 107px; /* 393px - 286px = 107px (aligné à droite) */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 55px;
+        padding: 0;
         grid-template-columns: repeat(3, 1fr);
     }
 }

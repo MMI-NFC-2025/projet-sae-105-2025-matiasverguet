@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=393, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>FISSIONNAIRE - Lise Meitner</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/menu.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -25,6 +26,26 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Menu Burger Overlay -->
+    <nav id="menu" class="menu-overlay" aria-hidden="true">
+        <div class="menu-header">
+            <img src="/assets/img/icon/logo.svg" alt="Logo" class="menu-logo">
+            <button class="menu-close-btn" aria-label="Fermer le menu">
+                <img src="/assets/img/icon/croix.svg" alt="Fermer" class="close-icon">
+            </button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="#lise-meitner">LISE MEITNER</a></li>
+            <li><a href="#fission-nucleaire">LA FISSION NUCLÉAIRE</a></li>
+            <li><a href="#litterature">LES FEMMES DE SCIENCE<br>DANS LA LITTÉRATURE</a></li>
+            <li><a href="#objet-bu">OBJET DE LA BU</a></li>
+            <li><a href="#films-series">FILMS ET SÉRIES</a></li>
+            <li><a href="#autres-projets">AUTRES PROJETS</a></li>
+            <li><a href="#glossaire">GLOSSAIRE</a></li>
+            <li><a href="#a-propos">A PROPOS</a></li>
+        </ul>
+    </nav>
 
     <!-- Hero Section - Lise Meitner -->
     <section class="hero" id="accueil">
