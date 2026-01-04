@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FISSIONNAIRE</title>
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/contact.css">
+</head>
+<body>
+    <!-- Header (identique à a-propos.html) -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo" style="text-decoration:none;">
+                <img src="../assets/img/icon/logo.svg" alt="Logo" class="logo-icon">
+                <span class="logo-text">FISSI<img src="../assets/img/icon/o.svg" alt="O" class="logo-o">NNAIRE</span>
+            </a>
+            <img src="../assets/img/icon/anglais.svg" alt="English" class="lang-icon">
+            <button class="menu-toggle" aria-label="Menu">
+                <img src="../assets/img/icon/menu.svg" alt="Menu" class="menu-icon">
+            </button>
+        </div>
+        </nav>
+        <!-- Menu Burger Overlay -->
+        <div class="menu" aria-hidden="true">
+            <div class="menu__header">
+                <a href="../index.html"><img src="../assets/img/icon/logo.svg" alt="Logo" class="menu__logo"></a>
+                <button class="menu__close" aria-label="Fermer le menu">
+                    <img src="../assets/img/icon/croix.svg" alt="Fermer" class="menu__close-icon">
+                </button>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="../index.html" class="menu__link">Lise Meitner</a></li>
+                <li class="menu__item"><a href="../index.html#theorie" class="menu__link">La fission nucléaire</a></li>
+                <li class="menu__item"><a href="../index.html#litterature" class="menu__link">Les femmes de science<br>dans la littérature</a></li>
+                <li class="menu__item"><a href="../index.html#bu" class="menu__link">Objet de la BU</a></li>
+                <li class="menu__item"><a href="/fr/filmetserie.html" class="menu__link">Films et séries</a></li>
+                <li class="menu__item"><a href="../index.html#autres-projets" class="menu__link">Autres projets</a></li>
+                <li class="menu__item"><a href="/fr/glossaire.html" class="menu__link">Glossaire</a></li>
+                <li class="menu__item"><a href="/fr/a-propos.html" class="menu__link">A propos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="../assets/img/contact.avif" alt="Contact" class="hero-image">
+    </section>
+
+    <!-- Contact Form -->
+    <main class="contact-main">
+        <section class="contact-section">
+            <div class="contact-container">
+                <h1>CONTACT</h1>
+                <form class="contact-form">
+                    <!-- Nom Complet -->
+                    <div class="form-group">
+                        <label>1. Votre nom complet</label>
+                        <div class="form-row">
+                            <input type="text" placeholder="Nom" required>
+                            <input type="text" placeholder="Prenom" required>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label>2. Adresse mail</label>
+                        <div class="form-input-icon">
+                            <img src="../assets/img/icon/mail.svg" alt="Email" class="form-icon">
+                            <input type="email" required>
+                        </div>
+                    </div>
+
+                    <!-- Téléphone -->
+                    <div class="form-group">
+                        <label>3. Numéro de téléphone</label>
+                        <div class="form-input-icon">
+                            <img src="../assets/img/icon/phone.svg" alt="Téléphone" class="form-icon">
+                            <input type="tel" required>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <textarea rows="6" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-button">Soumettre</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (identique à a-propos.html) -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="../index.html" class="footer-logo" style="text-decoration:none;">
+                    <img src="../assets/img/icon/logo.svg" alt="Logo" class="logo-icon">
+                    <span class="logo-text">FISSI<img src="../assets/img/icon/o.svg" alt="O" class="logo-o">NNAIRE</span>
+                </a>
+                <p class="footer-author">Verguet—Bailly Matias</p>
+                <p class="footer-class">MMI 1 C2</p>
+            </div>
+            <nav class="footer-nav">
+                <h4>MENU</h4>
+                <ul>
+                    <li><a href="a-propos.html">A propos</a></li>
+                    <li><a href="index.html#glossaire">Glossaire</a></li>
+                    <li><a href="index.html#contact">Contacts</a></li>
+                    <li><a href="index.html#autres-projets">Autres projets</a></li>
+                </ul>
+            </nav>
+            <div class="footer-contact">
+                <h4>CONTACT</h4>
+                <p>Département MMI</p>
+                <p>4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+                <p>0123456789</p>
+                <p>matias.verguet—bailly@edu.univ-fcomte.fr</p>
+            </div>
+            <div class="footer-legal">
+                <h4>MENTIONS LÉGALES</h4>
+                <p>Projet réalisé en 2025 dans le cadre d'un exercice <br> pédagogique au département MMI de Montbéliard.</p>
+            </div>
+            <div class="footer-social">
+                <h4>NOUS SUIVRE</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><img src="../assets/img/icon/facebook.svg" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram"><img src="../assets/img/icon/instagram.svg" alt="Instagram"></a>
+                    <a href="#" aria-label="Twitter"><img src="../assets/img/icon/twitter.svg" alt="Twitter"></a>
+                    <a href="#" aria-label="YouTube"><img src="../assets/img/icon/youtube.svg" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../src/js/script.js"></script>
+</body>
+</html>
