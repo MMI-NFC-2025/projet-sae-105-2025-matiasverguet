@@ -1,0 +1,502 @@
+/* ===== IMPORTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@300;400;700&display=swap');
+@import url('variables.css');
+
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--noir);
+    overflow-x: hidden;
+    background-color: var(--blanc);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ===== HEADER ===== */
+/* ===== MENU BURGER OVERLAY ===== */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.menu[aria-hidden="false"] {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 1.5rem 0 1.5rem;
+    gap: 1.5rem;
+    margin-top: 100px;
+}
+
+.menu__logo {
+    width: 37.25px;
+    height: 39px;
+}
+
+.menu__close {
+    margin-left: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu__close-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.menu__list {
+    list-style: none;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+    gap: 2.2rem;
+    margin-top: 0;
+}
+
+.menu__item {
+    text-align: right;
+    width: 100%;
+    color: #fff;
+    font-family: 'Inria Sans', Arial, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    line-height: 0.99 !important;
+    letter-spacing: -1% !important;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    display: block;
+    width: 90vw;
+    max-width: 340px;
+    padding: 0.7rem 0.5rem;
+    text-align: right;
+    word-break: break-word;
+    white-space: pre-line;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 27.9px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 39px;
+}
+
+.logo-icon {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: var(--font-logo);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.logo-o {
+    height: 1em;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lang-icon {
+    position: absolute;
+    right: calc(29.17px + 24px + 6.6px);
+    height: 25.11px;
+    width: 25.11px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lang-icon:hover {
+    opacity: 0.7;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+    cursor: pointer;
+    transition: var(--transition);
+    position: absolute;
+    right: 29.17px;
+    z-index: 10;
+    background: transparent;
+    border: none;
+}
+
+.menu-icon {
+    width: auto;
+    height: 24px;
+    display: block;
+}
+
+.menu-toggle:hover .menu-icon {
+    opacity: 0.7;
+}
+
+/* ===== FILM PAGE ===== */
+
+/* ===== MAIN CONTENT ===== */
+.film-main {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 393px;
+    margin: 0 auto;
+}
+
+/* ===== HERO SECTION ===== */
+.film-hero {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.film-hero figure {
+    margin: 0;
+    padding: 0;
+}
+
+.film-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* ===== FILM CONTENT ===== */
+.film-content {
+    padding: 0;
+    width: 100%;
+}
+
+.film-content h1 {
+    font-family: 'Alkalami', serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: var(--noir);
+    text-align: center;
+    padding: 30px 16px 20px 16px;
+    margin: 0;
+}
+
+/* ===== FILM DESCRIPTION BOX ===== */
+.film-description {
+    margin: 0 16px 30px 16px;
+    background-color: var(--gris);
+    border-radius: 27px;
+    padding: 20px;
+}
+
+.film-description p {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--noir);
+    margin: 0 0 12px 0;
+}
+
+.film-description p:last-child {
+    margin-bottom: 0;
+}
+
+.film-meta {
+    font-size: 12px !important;
+    color: #666;
+    margin-top: 15px !important;
+}
+
+.film-meta em {
+    font-style: italic;
+}
+
+/* ===== VIDEO SECTION ===== */
+.film-video {
+    width: 100%;
+    padding: 0 16px 40px 16px;
+}
+
+.film-video video {
+    width: 100%;
+    border-radius: 27px;
+    background-color: #000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: 40px 20px 30px 20px;
+    width: 100%;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 393px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-logo .logo-icon {
+    width: 39px;
+    height: auto;
+}
+
+.footer-logo .logo-text {
+    font-family: 'Jacques Francois', serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    line-height: 1;
+}
+
+.footer-logo .logo-o {
+    width: 15.66px;
+    height: auto;
+    margin: 0 -1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-author,
+.footer-class {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -1%;
+    margin: 0;
+}
+
+.footer-nav h4 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1%;
+    margin: 0 0 15px 0;
+    color: var(--frise);
+}
+
+.footer-legal h4 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1%;
+    margin: 0 0 15px 0;
+    color: var(--frise);
+}
+
+.footer-social h4 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1%;
+    margin: 0 0 15px 0;
+}
+
+.footer-contact h4 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1%;
+    margin: 0 0 15px 0;
+    color: var(--frise);
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -1%;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.footer-nav a:hover {
+    opacity: 0.7;
+}
+
+.footer-contact p {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -1%;
+    margin: 0 0 8px 0;
+    color: var(--frise);
+}
+
+.footer-legal p {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -1%;
+    margin: 0 0 8px 0;
+}
+
+.footer-contact p:last-child,
+.footer-legal p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-social {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social h4 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1%;
+    margin: 0 0 8px 0;
+    color: var(--frise);
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-icons a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 0;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}

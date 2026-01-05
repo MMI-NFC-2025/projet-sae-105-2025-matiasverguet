@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Films et Séries - FISSIONNAIRE</title>
-    <link rel="stylesheet" href="../src/css/index.css">
-    <link rel="stylesheet" href="../src/css/filmetserie.css">
+    <title>Picture a scientist </title>
+    <link rel="stylesheet" href="../src/css/film_marie.css">
+    <script src="../src/js/script.js" defer></script>
 </head>
 <body>
     <!-- Header (identique à a-propos.html) -->
     <header>
         <div class="header-container">
+            <button class="back-button" onclick="history.back()" aria-label="Retour">
+                <img src="../assets/img/icon/croix.svg" alt="Retour" class="back-icon">
+            </button>
             <a href="../index.html" class="logo" style="text-decoration:none;">
                 <img src="../assets/img/icon/logo.svg" alt="Logo" class="logo-icon">
                 <span class="logo-text">FISSI<img src="../assets/img/icon/o.svg" alt="O" class="logo-o">NNAIRE</span>
@@ -20,7 +23,6 @@
                 <img src="../assets/img/icon/menu.svg" alt="Menu" class="menu-icon">
             </button>
         </div>
-        </nav>
         <!-- Menu Burger Overlay -->
         <div class="menu" aria-hidden="true">
             <div class="menu__header">
@@ -42,68 +44,35 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">        <img src="../assets/img/film/hero.avif" alt="L'effet Mathilda en vidéo" class="hero-image">        <div class="hero-text">
-            <div class="date">Publié le 15/09/2025 à 15 h 30 par Verguet--Bailly Matias</div>
-            <h1>L'effet Mathilda en vidéo</h1>
-            <p>Le cinéma et les séries jouent un rôle essentiel pour redonner voix aux femmes scientifiques oubliées.Ces œuvres participent à corriger les injustices de l’histoire et à inspirer de nouvelles vocations.</p>
-        </div>
-    </section>
-
     <!-- Main Content -->
-    <main>
-        <!-- Section 1: Restaurer la Mémoire Collective -->
-        <section>
-            <h2 class="section-title">Restaurer la Mémoire Collective</h2>
-            <div class="section-content">
-                <div>
-                    <p>Pendant longtemps, la grande majorité des récits scientifiques, historiques ou culturels ont mis en avant des hommes, laissant les femmes dans l’ombre.<br>Aujourd’hui, le cinéma et les séries jouent un rôle essentiel dans la réhabilitation de ces figures oubliées : ils rendent visibles leurs visages, leurs voix et leurs contributions. L’image devient un outil de justice symbolique, capable de toucher un large public là où les manuels d’histoire n’avaient pas toujours su le faire</p>
-                </div>
-            </div>
+    <main class="film-main">
+        <!-- Hero Image -->
+        <section class="film-hero">
+            <figure>
+                <img src="../assets/img/film/picture.avif" alt="Picture a Scientist" class="film-hero-img">
+            </figure>
         </section>
 
-        <!-- Section 2: Entre Émotion et Connaissance -->
-        <section>
-            <h2 class="section-title">Entre Émotion et Connaissance</h2>
-            <div class="section-content full">
-                <p>À travers la mise en scène, le témoignage et la fiction, ces œuvres permettent d’incarner des parcours complexes : celui de chercheuses, d’artistes, de militantes, de pionnières. Le spectateur découvre non seulement leur génie, mais aussi les obstacles sociaux, politiques et sexistes qu’elles ont dû surmonter pour exister. Cette approche sensible et visuelle transforme la science et l’histoire en expériences humaines, accessibles à toutes et tous.</p>
+        <!-- Film Content -->
+        <section class="film-content">
+            <h1>Nancy Hopkins : Picture <br> a Scientist </h1>
+            
+            <div class="film-description">
+                <p><strong>Ce documentaire explore les inégalités persistantes dans le monde scientifique à travers les parcours de plusieurs chercheuses, dont la biologiste Nancy Hopkins.</strong></p>
+                <p><strong> Il met en évidence les discriminations de genre, les biais institutionnels et la lutte des femmes pour être reconnues à leur juste valeur dans la recherche.</strong></p>
+                <p class="film-meta"><em>Durée : 97 min • Réalisation : Sharon Shattuck et Ian Cheney</em></p>
             </div>
-        </section>
 
-        <!-- Section 3: Des Exemples Marquants -->
-        <section>
-            <h2 class="section-title">Des Exemples Marquants</h2>
-            <div class="image-gallery">
-                <a href="film_hidden.html" class="gallery-item">
-                    <img src="../assets/img/film/hidden_figure.avif" alt="Hidden Figures">
-                    <div class="gallery-item-title"></div>
-                </a>
-                <a href="film_lisem.html" class="gallery-item">
-                    <img src="../assets/img/film/lise_meitner.avif" alt="Lise Meitner">
-                    <div class="gallery-item-title"></div>
-                </a>
-                <a href="film_marie.html" class="gallery-item">
-                    <img src="../assets/img/film/radioactive.avif" alt="Marie Curie">
-                    <div class="gallery-item-title"></div>
-                </a>
-                <a href="film_picture.html" class="gallery-item">
-                    <img src="../assets/img/film/picture.avif" alt="Picture">
-                    <div class="gallery-item-title"></div>
-                </a>
-            </div>
-        </section>
-
-        <!-- Section 4: Conclusion -->
-        <section>
-            <h2 class="section-title">Conclusion</h2>
-            <div class="section-content full">
-                <p>Le film ou la série devient alors plus qu’un divertissement : c’est un outil de transmission, un moyen d’éducation et un acte de réparation culturelle. En diffusant ces histoires, on rétablit un équilibre et on inspire de nouvelles générations à croire qu’elles ont, elles aussi, leur place dans l’histoire du savoir.</p>
+            <!-- Video Section -->
+            <div class="film-video">
+                <video controls width="100%" poster="">
+                    <source src="../assets/video/picture.mp4" type="video/mp4">
+                </video>
             </div>
         </section>
     </main>
 
-    <!-- Footer (identique à a-propos.html) -->
-    <footer>
+<footer>
         <div class="footer-container">
             <div class="footer-top">
                 <a href="/index.html" class="footer-logo" style="text-decoration:none;">
@@ -148,6 +117,6 @@
             </div>
         </div>
     </footer>
-    <script src="../src/js/script.js"></script>
+        <script src="../src/js/script.js"></script>
 </body>
 </html>
