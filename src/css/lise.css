@@ -242,29 +242,21 @@ header {
 .main-nav ul li a:hover {
     color: var(--gris);
 }
-/* ===== LITTERATURE PAGE ===== */
 
-/* ===== MAIN CONTENT ===== */
-.litterature-main {
-    background-color: #ffffff;
-    color: #000000;
-    width: 393px;
-    min-height: 170vh;
-    padding: 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
+/* ===== LISE PAGE ===== */
 
 /* ===== HERO SECTION ===== */
 .hero-section {
-    width: 393px;
+    width: 100%;
     height: auto;
-    overflow: visible;
+    overflow: hidden;
     background-color: transparent;
     margin: 0;
-    margin-bottom: 200px;
+}
+
+.hero-section figure {
+    margin: 0;
+    padding: 0;
 }
 
 .hero-image {
@@ -273,20 +265,37 @@ header {
     object-fit: cover;
     object-position: center;
     display: block;
+    filter: grayscale(100%);
+}
+
+.hero-section figcaption {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -0.01em;
+    color: var(--noir);
+    padding: 10px 20px 0px 30px;
+    text-align: left;
+    font-style: italic;
+}
+
+/* ===== MAIN CONTENT ===== */
+.lise-main {
+    background-color: var(--blanc);
+    color: var(--noir);
+    width: 393px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* ===== INTRODUCTION SECTION ===== */
-.litterature-intro {
+.lise-intro {
     background-color: transparent;
     padding: 30px 20px 20px 20px;
     width: 100%;
     margin: 0;
-    margin-top: -20px;
-}
-
-.litterature-header {
-    display: flex;
-    flex-direction: column;
 }
 
 .published-date {
@@ -299,10 +308,9 @@ header {
     text-align: left;
     margin-bottom: 10px;
     padding-left: 10px;
-    text-shadow: none !important;
 }
 
-.litterature-intro h1 {
+.lise-intro h1 {
     font-family: 'Alkalami', serif;
     font-size: 28px;
     font-weight: 400;
@@ -312,7 +320,6 @@ header {
     margin-bottom: 5px;
     text-align: left;
     padding-left: 10px;
-    text-shadow: none !important;
 }
 
 .subtitle {
@@ -325,27 +332,23 @@ header {
     text-align: left;
     margin-bottom: 1px;
     padding-left: 10px;
-    text-shadow: none !important;
 }
 
 /* ===== CONTENT SECTION ===== */
-.litterature-content {
-    background-color: transparent !important;
-    padding: 0 20px 20px 0px !important;
-    width: 100% !important;
-    margin: 0 !important;
-    margin-top:-180px !important;
-    left: 16px !important;
-    position: relative !important;
+.lise-content {
+    background-color: transparent;
+    padding: 0 20px 20px 20px;
+    width: 100%;
+    margin: 0;
 }
 
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+/* ===== BIO SECTION ===== */
+.bio-section {
+    margin-bottom: 30px;
+    padding-left: 10px;
 }
 
-.content-wrapper > p {
+.bio-section p {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -353,14 +356,14 @@ header {
     letter-spacing: -0.01em;
     color: var(--noir);
     text-align: left;
-    padding-left: 10px;
-    text-shadow: none !important;
+    margin: 0;
 }
 
 /* ===== SECTION HEADERS ===== */
-.examples-section h2,
-.impact-section h2,
-.fiction-section h2 {
+.discovery-section h2,
+.mathilda-section h2,
+.video-section h2,
+.more-info-section h2 {
     font-family: 'Inria Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -368,41 +371,18 @@ header {
     letter-spacing: -0.01em;
     color: var(--noir);
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: 0;
     text-align: left;
-    position: relative;
-    text-shadow: none !important;
+    padding-left: 10px;
 }
 
-/* ===== EXAMPLES SECTION ===== */
-.examples-section {
-    margin-bottom: 40px;
-    padding: 0;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 393px;
-    box-sizing: border-box;
-    text-align: left;
-    margin-left: 0;
-    padding-left: 16px;
-    padding-right: 16px;
+/* ===== DISCOVERY SECTION ===== */
+.discovery-section {
+    margin-bottom: 30px;
 }
 
-.examples-section h2 {
-    margin-bottom: 20px;
-}
-
-.examples-list {
-    list-style: disc;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.examples-list li {
+.discovery-section p {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -410,57 +390,43 @@ header {
     letter-spacing: -0.01em;
     color: var(--noir);
     text-align: left;
-    text-shadow: none !important;
-    margin-left: 20px;
+    margin: 0 0 15px 0;
+    padding-left: 10px;
 }
 
-.examples-list strong {
+.discovery-section strong {
     font-weight: 700;
     line-height: 140%;
 }
 
-/* ===== BOOKS SECTION ===== */
-.books-section {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    justify-content: center;
-    width: 100%;
-    max-width: 393px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    box-sizing: border-box;
+.quote {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 120%;
+    letter-spacing: -0.01em;
 }
 
-.book-cover {
-    width: 100px;
-    height: 169px;
+/* ===== SCIENCE IMAGE ===== */
+.science-image {
+    margin: 30px 0;
+    width: 100%;
+}
+
+.image-full {
+    width: 100%;
+    height: auto;
     display: block;
-    object-fit: cover;
+    filter: grayscale(100%);
 }
 
-/* ===== IMPACT SECTION ===== */
-.impact-section {
-    margin-bottom: 40px;
-    padding: 0;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 393px;
-    box-sizing: border-box;
-    text-align: left;
-    margin-left: 0;
-    padding-left: 16px;
-    padding-right: 16px;
+/* ===== MATHILDA SECTION ===== */
+.mathilda-section {
+    margin-bottom: 30px;
 }
 
-.impact-section h2 {
-    margin-bottom: 20px;
-}
-
-.impact-section p {
+.mathilda-section p {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -469,28 +435,15 @@ header {
     color: var(--noir);
     text-align: left;
     margin: 0;
-    text-shadow: none !important;
+    padding-left: 10px;
 }
 
-/* ===== FICTION SECTION ===== */
-.fiction-section {
-    margin-bottom: 0px;
-    padding: 0;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 393px;
-    box-sizing: border-box;
-    text-align: left;
-    margin-left: 0;
-    padding-left: 16px;
-    padding-right: 16px;
+/* ===== VIDEO SECTION ===== */
+.video-section {
+    margin-bottom: 30px;
 }
 
-.fiction-section h2 {
-    margin-bottom: 20px;
-}
-
-.fiction-section p {
+.video-section p {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -499,10 +452,44 @@ header {
     color: var(--noir);
     text-align: left;
     margin: 0;
-    text-shadow: none !important;
+    padding-left: 10px;
 }
 
+.video-section em {
+    font-style: italic;
+}
 
+/* ===== MORE INFO SECTION ===== */
+.more-info-section {
+    margin-bottom: 30px;
+}
+
+.more-info-section p {
+    padding-left: 10px;
+}
+
+.more-link {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -0.01em;
+    color: #000000;
+    text-decoration: none;
+    background-color: #E8E8E8;
+    width: 116px;
+    height: 25px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+}
+
+.more-link:hover {
+    opacity: 0.7;
+}
 
 /* ===== FOOTER ===== */
 footer {
@@ -699,19 +686,7 @@ footer {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
-    .litterature-main {
+    .lise-main {
         width: 100%;
-    }
-
-    .hero-section {
-        width: 100%;
-    }
-
-    .litterature-content {
-        padding: 30px 15px 20px 15px;
-    }
-
-    .litterature-intro {
-        padding: 30px 15px 20px 15px;
     }
 }

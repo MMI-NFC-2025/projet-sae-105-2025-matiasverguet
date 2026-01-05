@@ -1,5 +1,5 @@
 /* ===== IMPORTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@300;400;700&display=swap');
 @import url('variables.css');
 
 /* ===== RESET & BASE ===== */
@@ -242,32 +242,35 @@ header {
 .main-nav ul li a:hover {
     color: var(--gris);
 }
-/* ===== LITTERATURE PAGE ===== */
+
+/* ===== BU PAGE ===== */
 
 /* ===== MAIN CONTENT ===== */
-.litterature-main {
+.bu-main {
     background-color: #ffffff;
     color: #000000;
-    width: 393px;
-    min-height: 170vh;
+    width: 100%;
+    margin: 0 auto;
     padding: 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     box-sizing: border-box;
 }
 
 /* ===== HERO SECTION ===== */
-.hero-section {
-    width: 393px;
+.bu-hero {
+    width: 100%;
     height: auto;
-    overflow: visible;
+    overflow: hidden;
     background-color: transparent;
     margin: 0;
-    margin-bottom: 200px;
+    position: relative;
 }
 
-.hero-image {
+.bu-hero figure {
+    margin: 0;
+    padding: 0;
+}
+
+.bu-hero-img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -275,18 +278,25 @@ header {
     display: block;
 }
 
-/* ===== INTRODUCTION SECTION ===== */
-.litterature-intro {
-    background-color: transparent;
-    padding: 30px 20px 20px 20px;
-    width: 100%;
-    margin: 0;
-    margin-top: -20px;
+.bu-hero figcaption {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -0.01em;
+    color: #666666;
+    padding: 10px 16px;
+    text-align: left;
+    font-style: italic;
 }
 
-.litterature-header {
-    display: flex;
-    flex-direction: column;
+/* ===== CONTENT SECTION ===== */
+.bu-content {
+    background-color: transparent;
+    padding: 30px 0 40px 0;
+    width: 100%;
+    max-width: 393px;
+    margin: 0 auto;
 }
 
 .published-date {
@@ -295,27 +305,54 @@ header {
     font-weight: 400;
     line-height: 99%;
     letter-spacing: -0.01em;
-    color: var(--noir);
-    text-align: left;
+    color:var(--noir);
     margin-bottom: 10px;
-    padding-left: 10px;
-    text-shadow: none !important;
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.litterature-intro h1 {
+.bu-content h1 {
     font-family: 'Alkalami', serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: -0.01em;
-    color: #000000;
+    color: var(--noir);
     margin-bottom: 5px;
     text-align: left;
-    padding-left: 10px;
-    text-shadow: none !important;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.subtitle {
+.bu-content .subtitle {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -0.01em;
+    color: var(--noir);
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* ===== INTRO SECTION ===== */
+.bu-intro {
+    margin-bottom: 20px;
+    width: calc(100% - 32px);
+    max-width: 362px;
+    height: auto;
+    background-color: var(--gris);
+    border-radius: 27px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.bu-intro p {
     font-family: 'Inria Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -323,29 +360,10 @@ header {
     letter-spacing: -0.01em;
     color: var(--noir);
     text-align: left;
-    margin-bottom: 1px;
-    padding-left: 10px;
-    text-shadow: none !important;
+    margin: 0;
 }
 
-/* ===== CONTENT SECTION ===== */
-.litterature-content {
-    background-color: transparent !important;
-    padding: 0 20px 20px 0px !important;
-    width: 100% !important;
-    margin: 0 !important;
-    margin-top:-180px !important;
-    left: 16px !important;
-    position: relative !important;
-}
-
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.content-wrapper > p {
+.bu-content > p {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -353,14 +371,51 @@ header {
     letter-spacing: -0.01em;
     color: var(--noir);
     text-align: left;
-    padding-left: 10px;
-    text-shadow: none !important;
+    margin: 0 0 30px 0;
 }
 
-/* ===== SECTION HEADERS ===== */
-.examples-section h2,
-.impact-section h2,
-.fiction-section h2 {
+/* ===== EXTRAITS SECTION ===== */
+.bu-extraits {
+    margin-bottom: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.bu-extraits h2 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -0.01em;
+    color: var(--noir);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.bu-extraits p {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--noir);
+    text-align: left;
+    margin: 0;
+}
+
+.bu-extraits em {
+    font-style: italic;
+}
+
+/* ===== IDÉES CLÉS SECTION ===== */
+.bu-idees-cles {
+    margin-bottom: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.bu-idees-cles h2 {
     font-family: 'Inria Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -369,140 +424,104 @@ header {
     color: var(--noir);
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-top: 0;
     text-align: left;
-    position: relative;
-    text-shadow: none !important;
 }
 
-/* ===== EXAMPLES SECTION ===== */
-.examples-section {
-    margin-bottom: 40px;
-    padding: 0;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 393px;
-    box-sizing: border-box;
-    text-align: left;
-    margin-left: 0;
-    padding-left: 16px;
-    padding-right: 16px;
+.bu-idee {
+    margin-bottom: 25px;
 }
 
-.examples-section h2 {
-    margin-bottom: 20px;
-}
-
-.examples-list {
-    list-style: disc;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.examples-list li {
+.bu-idee h3 {
     font-family: 'Inria Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: -0.01em;
-    color: var(--noir);
-    text-align: left;
-    text-shadow: none !important;
-    margin-left: 20px;
-}
-
-.examples-list strong {
+    font-size: 16px;
     font-weight: 700;
     line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--noir);
+    margin-bottom: 10px;
+    text-align: left;
 }
 
-/* ===== BOOKS SECTION ===== */
-.books-section {
+.bu-idee h4 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--noir);
+    margin: 15px 0 10px 0;
+    text-align: left;
+}
+
+.bu-idee p {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--noir);
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+
+.bu-idee p em {
+    font-style: italic;
+}
+
+.bu-idee ul {
+    list-style: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.bu-idee ul li {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--noir);
+    margin-bottom: 8px;
+}
+
+/* ===== MOTS CLÉS SECTION ===== */
+.bu-mots-cles {
+    margin-bottom: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.bu-mots-cles h2 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -0.01em;
+    color: var(--noir);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.bu-tags {
     display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    justify-content: center;
-    width: 100%;
-    max-width: 393px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
 }
 
-.book-cover {
-    width: 100px;
-    height: 169px;
-    display: block;
-    object-fit: cover;
-}
-
-/* ===== IMPACT SECTION ===== */
-.impact-section {
-    margin-bottom: 40px;
-    padding: 0;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 393px;
-    box-sizing: border-box;
-    text-align: left;
-    margin-left: 0;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.impact-section h2 {
-    margin-bottom: 20px;
-}
-
-.impact-section p {
+.tag {
     font-family: 'Inria Sans', sans-serif;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 400;
-    line-height: 140%;
+    line-height: 99%;
     letter-spacing: -0.01em;
     color: var(--noir);
-    text-align: left;
-    margin: 0;
-    text-shadow: none !important;
+    background-color: #F0F0F0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
 }
-
-/* ===== FICTION SECTION ===== */
-.fiction-section {
-    margin-bottom: 0px;
-    padding: 0;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 393px;
-    box-sizing: border-box;
-    text-align: left;
-    margin-left: 0;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.fiction-section h2 {
-    margin-bottom: 20px;
-}
-
-.fiction-section p {
-    font-family: 'Inria Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: -0.01em;
-    color: var(--noir);
-    text-align: left;
-    margin: 0;
-    text-shadow: none !important;
-}
-
-
 
 /* ===== FOOTER ===== */
 footer {
@@ -699,19 +718,8 @@ footer {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
-    .litterature-main {
+    .bu-content {
         width: 100%;
-    }
-
-    .hero-section {
-        width: 100%;
-    }
-
-    .litterature-content {
-        padding: 30px 15px 20px 15px;
-    }
-
-    .litterature-intro {
-        padding: 30px 15px 20px 15px;
+        padding: 30px 15px 40px 15px;
     }
 }
