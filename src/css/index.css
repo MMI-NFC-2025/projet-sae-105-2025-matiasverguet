@@ -498,6 +498,21 @@ header {
     text-align: center;
 }
 
+.carousel-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.carousel-card-link .carousel-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-card-link:hover .carousel-card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 /* ===== SECTIONS COMMUNES (Théorie, Littérature, BU, Films) ===== */
 .theorie,
 .litterature,
