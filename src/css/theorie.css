@@ -10,6 +10,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: var(--font-main);
     line-height: 1.6;
     color: var(--noir);
@@ -42,7 +45,7 @@ button {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 0vh;
+    height: 100vh;
     background: #000;
     color: #fff;
     z-index: 2000;
@@ -133,6 +136,7 @@ header {
     height: 110px;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .header-container {
@@ -242,267 +246,326 @@ header {
 .main-nav ul li a:hover {
     color: var(--gris);
 }
-/* ===== LITTERATURE PAGE ===== */
+
+/* ===== THEORIE PAGE ===== */
 
 /* ===== MAIN CONTENT ===== */
-.litterature-main {
+.theorie-main {
     background-color: #ffffff;
     color: #000000;
     width: 393px;
-    min-height: 170vh;
+    min-height: 230vh;
     padding: 0;
     flex: 1;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
 }
 
 /* ===== HERO SECTION ===== */
-.hero-section {
+.theorie-hero {
     width: 393px;
-    height: auto;
-    overflow: visible;
-    background-color: transparent;
+    height: 220px;
+    overflow: hidden;
+    background-color: #000000;
     margin: 0;
-    margin-bottom: 200px;
 }
 
-.hero-image {
+.theorie-hero-img {
     width: 100%;
-    height: auto;
+    height: 248px;
     object-fit: cover;
     object-position: center;
     display: block;
 }
 
-/* ===== INTRODUCTION SECTION ===== */
-.litterature-intro {
+/* ===== CONTENT SECTION ===== */
+.theorie-content {
     background-color: transparent;
-    padding: 30px 20px 20px 20px;
+    padding: 40px 20px 20px 10px;
     width: 100%;
     margin: 0;
-    margin-top: -20px;
+    margin-top: 150px;
 }
 
-.litterature-header {
-    display: flex;
-    flex-direction: column;
-}
-
-.published-date {
+.theorie-date {
     font-family: 'Inria Sans', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 99%;
+    line-height: 140%;
     letter-spacing: -0.01em;
-    color: var(--noir);
+    color: #999999;
     text-align: left;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    text-shadow: none !important;
+    margin-top: 0;
+    margin-bottom: 35px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.litterature-intro h1 {
+.theorie-content h1 {
     font-family: 'Alkalami', serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: -0.01em;
     color: #000000;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     text-align: left;
-    padding-left: 10px;
-    text-shadow: none !important;
 }
 
-.subtitle {
+.theorie-subtitle {
     font-family: 'Inria Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 99%;
+    line-height: 140%;
     letter-spacing: -0.01em;
-    color: var(--noir);
+    color: #666666;
     text-align: left;
     margin-bottom: 1px;
-    padding-left: 10px;
-    text-shadow: none !important;
 }
 
-/* ===== CONTENT SECTION ===== */
-.litterature-content {
-    background-color: transparent !important;
-    padding: 0 20px 20px 0px !important;
-    width: 100% !important;
-    margin: 0 !important;
-    margin-top:-180px !important;
-    left: 16px !important;
-    position: relative !important;
-}
 
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
 
-.content-wrapper > p {
-    font-family: 'Inria Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: -0.01em;
-    color: var(--noir);
-    text-align: left;
-    padding-left: 10px;
-    text-shadow: none !important;
-}
-
-/* ===== SECTION HEADERS ===== */
-.examples-section h2,
-.impact-section h2,
-.fiction-section h2 {
-    font-family: 'Inria Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 99%;
-    letter-spacing: -0.01em;
-    color: var(--noir);
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    margin-top: 0;
-    text-align: left;
+/* ===== DIVIDER SECTION ===== */
+.theorie-divider {
     position: relative;
-    text-shadow: none !important;
-}
-
-/* ===== EXAMPLES SECTION ===== */
-.examples-section {
-    margin-bottom: 40px;
-    padding: 0;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 393px;
-    box-sizing: border-box;
-    text-align: left;
-    margin-left: 0;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.examples-section h2 {
-    margin-bottom: 20px;
-}
-
-.examples-list {
-    list-style: disc;
-    padding: 0;
-    margin: 0;
+    width: calc(100% + 40px);
+    margin: 50px 0 40px -47px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 15px;
 }
 
-.examples-list li {
-    font-family: 'Inria Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: -0.01em;
-    color: var(--noir);
-    text-align: left;
-    text-shadow: none !important;
-    margin-left: 20px;
-}
-
-.examples-list strong {
-    font-weight: 700;
-    line-height: 140%;
-}
-
-/* ===== BOOKS SECTION ===== */
-.books-section {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    justify-content: center;
+.divider-img {
     width: 100%;
-    max-width: 393px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.book-cover {
-    width: 100px;
-    height: 169px;
-    display: block;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
-/* ===== IMPACT SECTION ===== */
-.impact-section {
-    margin-bottom: 40px;
-    padding: 0;
+
+
+/* ===== CONTENT SECTIONS ===== */
+.theorie-section {
+    margin-bottom: 35px;
+    padding: 25px 15px;
     border-radius: 8px;
+}
+
+.theorie-section:first-of-type {
+    background-color: var(--gris);
+    margin-top: -100px;
+    margin-left: -14px;
+    margin-right: 10px;
     width: 100%;
-    max-width: 393px;
-    box-sizing: border-box;
-    text-align: left;
+    max-width: 350px;
+    border-radius: 27px;
+    position: relative;
+    z-index: 10;
+}
+
+.theorie-section:first-of-type h3 {
     margin-left: 0;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
-.impact-section h2 {
-    margin-bottom: 20px;
+.theorie-section:first-of-type p {
+    margin-left: 0;
 }
 
-.impact-section p {
+.theorie-section h3 {
+    font-family: 'Alkalami', serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -1%;
+    color: var(--noir);
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-align: left;
+    margin-left: -20px;
+}
+
+.theorie-section p {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 140%;
+    line-height: 150%;
     letter-spacing: -0.01em;
     color: var(--noir);
+    margin-bottom: 12px;
     text-align: left;
-    margin: 0;
-    text-shadow: none !important;
+    margin-left: -20px;
 }
 
-/* ===== FICTION SECTION ===== */
-.fiction-section {
-    margin-bottom: 0px;
-    padding: 0;
+.theorie-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== DIAGRAM SECTION ===== */
+.theorie-diagram {
+    margin-bottom: 35px;
+    padding: 1px 20px;
     border-radius: 8px;
-    width: 100%;
-    max-width: 393px;
-    box-sizing: border-box;
+    margin-left: -20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.theorie-diagram h3 {
+    font-family: 'Alkalami', serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -1%;
+    color: #000000;
+    margin: 0;
     text-align: left;
-    margin-left: 0;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
-.fiction-section h2 {
-    margin-bottom: 20px;
+.fission-diagram {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.fiction-section p {
+/* ===== LIST STYLES ===== */
+.theorie-list {
+    list-style: none;
+    padding: 0;
+    margin: -10 0 15px 0;
+}
+
+.theorie-list li {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 140%;
+    line-height: 150%;
     letter-spacing: -0.01em;
-    color: var(--noir);
+    color: #333333;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
     text-align: left;
-    margin: 0;
-    text-shadow: none !important;
 }
 
+.theorie-list li:before {
+    content: "•";
+    color: #000000;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+}
 
+/* ===== NOTE BOX ===== */
+.theorie-note {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 330px;
+}
+
+.theorie-note p {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #333333;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: -57px;
+}
+
+.theorie-note p:last-child {
+    margin-bottom: 0;
+}
+
+.theorie-note strong {
+    color: #000000;
+    font-weight: 700 !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+    .theorie-content {
+        padding: 50px 40px 100px 40px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .theorie-content h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .theorie-subtitle {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .theorie-divider {
+        margin: 60px 0 50px 0;
+    }
+
+    .theorie-section,
+    .theorie-diagram {
+        padding: 30px 30px;
+    }
+
+    .theorie-section h3,
+    .theorie-diagram h3 {
+        font-size: 15px;
+    }
+
+    .theorie-section p {
+        font-size: 15px;
+    }
+
+    .theorie-list li {
+        font-size: 15px;
+    }
+
+    .theorie-note {
+        padding: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .theorie-content {
+        padding: 60px 50px 120px 50px;
+        max-width: 950px;
+    }
+
+    .theorie-content h1 {
+        font-size: 42px;
+    }
+
+    .theorie-subtitle {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .theorie-divider {
+        margin: 80px 0 60px 0;
+    }
+
+    .theorie-section,
+    .theorie-diagram {
+        padding: 35px 40px;
+    }
+}
 
 /* ===== FOOTER ===== */
 footer {
@@ -512,6 +575,7 @@ footer {
     width: 100%;
     flex-shrink: 0;
     margin-top: auto;
+    margin-bottom: -1px;
 }
 
 .footer-container {
@@ -697,21 +761,49 @@ footer {
     display: block;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 768px) {
-    .litterature-main {
-        width: 100%;
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
     }
 
-    .hero-section {
-        width: 100%;
+    .main-nav {
+        display: block;
     }
 
-    .litterature-content {
-        padding: 30px 15px 20px 15px;
+    .main-nav ul {
+        display: flex;
+        gap: 2rem;
+        padding: 0;
     }
 
-    .litterature-intro {
-        padding: 30px 15px 20px 15px;
+    .main-nav ul li {
+        padding: 0;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding: 1.5rem 3rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-container {
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    }
+
+    .footer-social {
+        grid-column: 1 / -1;
+        justify-content: center;
+        margin-top: 2rem;
     }
 }
