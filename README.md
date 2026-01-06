@@ -4,7 +4,7 @@
 À compléter :
 
 - NOM : Verguet-Bailly
-- PRÉNOM : Matias
+- PRÉNOM : Matias   
 - GROUPE : C2
 - URL du site :
 - URL FIGMA :
