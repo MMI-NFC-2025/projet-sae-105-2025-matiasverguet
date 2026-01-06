@@ -264,7 +264,7 @@ header {
     overflow: visible;
     background-color: transparent;
     margin: 0;
-    margin-bottom: 200px;
+    margin-bottom: -100px;
 }
 
 .hero-image {
@@ -744,27 +744,6 @@ footer {
         font-size: 12px;
         margin-top: 10px;
     }
-    header {
-        height: 100px;
-    }
-    .logo {
-        left: 16px;
-        gap: 15px;
-    }
-    .logo-text {
-        font-size: 18px;
-    }
-    .logo-icon {
-        height: 32px;
-    }
-    .lang-icon {
-        right: calc(16px + 24px + 6px);
-        height: 22px;
-        width: 22px;
-    }
-    .menu-toggle {
-        right: 16px;
-    }
     footer {
         padding: 30px 16px 25px 16px;
     }
@@ -806,15 +785,6 @@ footer {
     }
     .book-item p {
         font-size: 14px;
-    }
-    .logo {
-        left: 20px;
-    }
-    .lang-icon {
-        right: calc(20px + 24px + 6px);
-    }
-    .menu-toggle {
-        right: 20px;
     }
 }
 
@@ -859,15 +829,6 @@ footer {
     }
     .book-meta {
         font-size: 13px;
-    }
-    .logo {
-        left: 25px;
-    }
-    .lang-icon {
-        right: calc(25px + 24px + 6px);
-    }
-    .menu-toggle {
-        right: 25px;
     }
 }
 
@@ -967,33 +928,11 @@ footer {
         font-size: 15px;
         margin-top: 16px;
     }
-    header {
-        height: 120px;
-    }
-    .logo {
-        left: 40px;
-        gap: 30px;
-    }
-    .logo-icon {
-        height: 45px;
-    }
-    .logo-text {
-        font-size: 24px;
-    }
-    .lang-icon {
-        right: calc(40px + 28px + 8px);
-        height: 28px;
-        width: 28px;
-    }
-    .menu-toggle {
-        right: 40px;
-    }
-    .menu-icon {
-        height: 28px;
-    }
     footer {
         padding: 50px 40px 40px 40px;
     }
     .footer-container {
         max-width: 900px;
         margin: 0 auto;
+    }
+}

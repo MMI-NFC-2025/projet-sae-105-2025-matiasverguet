@@ -508,29 +508,6 @@ footer {
         max-width: 100%;
     }
     
-    .logo {
-        left: 16px;
-        gap: 15px;
-    }
-    
-    .logo-text {
-        font-size: 18px;
-    }
-    
-    .logo-icon {
-        height: 32px;
-    }
-    
-    .lang-icon {
-        right: calc(16px + 24px + 6px);
-        height: 22px;
-        width: 22px;
-    }
-    
-    .menu-toggle {
-        right: 16px;
-    }
-    
     .film-content h1 {
         font-size: 24px;
         padding: 20px 12px 15px 12px;
@@ -564,36 +541,12 @@ footer {
     .film-main {
         max-width: 100%;
     }
-    
-    .logo {
-        left: 20px;
-    }
-    
-    .lang-icon {
-        right: calc(20px + 24px + 6px);
-    }
-    
-    .menu-toggle {
-        right: 20px;
-    }
 }
 
 /* Smartphones moyens et grands (480px et plus) */
 @media (min-width: 480px) {
     .film-main {
         max-width: 100%;
-    }
-    
-    .logo {
-        left: 30px;
-    }
-    
-    .lang-icon {
-        right: calc(30px + 24px + 6px);
-    }
-    
-    .menu-toggle {
-        right: 30px;
     }
     
     .film-content h1 {
@@ -619,37 +572,6 @@ footer {
 @media (min-width: 600px) {
     .film-main {
         max-width: 600px;
-    }
-    
-    header {
-        height: 120px;
-    }
-    
-    .logo {
-        left: 40px;
-        gap: 30px;
-    }
-    
-    .logo-icon {
-        height: 45px;
-    }
-    
-    .logo-text {
-        font-size: 24px;
-    }
-    
-    .lang-icon {
-        right: calc(40px + 28px + 8px);
-        height: 28px;
-        width: 28px;
-    }
-    
-    .menu-toggle {
-        right: 40px;
-    }
-    
-    .menu-icon {
-        height: 28px;
     }
     
     .film-content h1 {

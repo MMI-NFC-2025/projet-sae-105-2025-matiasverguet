@@ -717,27 +717,6 @@ footer {
     .timeline-item h3 {
         font-size: 18px;
     }
-    header {
-        height: 100px;
-    }
-    .logo {
-        left: 16px;
-        gap: 15px;
-    }
-    .logo-text {
-        font-size: 18px;
-    }
-    .logo-icon {
-        height: 32px;
-    }
-    .lang-icon {
-        right: calc(16px + 24px + 6px);
-        height: 22px;
-        width: 22px;
-    }
-    .menu-toggle {
-        right: 16px;
-    }
     footer {
         padding: 30px 16px 25px 16px;
     }
@@ -766,15 +745,6 @@ footer {
     }
     .timeline-item h3 {
         font-size: 20px;
-    }
-    .logo {
-        left: 20px;
-    }
-    .lang-icon {
-        right: calc(20px + 24px + 6px);
-    }
-    .menu-toggle {
-        right: 20px;
     }
 }
 
@@ -805,15 +775,6 @@ footer {
     }
     .timeline-item h3 {
         font-size: 22px;
-    }
-    .logo {
-        left: 25px;
-    }
-    .lang-icon {
-        right: calc(25px + 24px + 6px);
-    }
-    .menu-toggle {
-        right: 25px;
     }
 }
 
@@ -884,30 +845,6 @@ footer {
     .timeline-item h3 {
         font-size: 26px;
         margin-bottom: 14px;
-    }
-    header {
-        height: 120px;
-    }
-    .logo {
-        left: 40px;
-        gap: 30px;
-    }
-    .logo-icon {
-        height: 45px;
-    }
-    .logo-text {
-        font-size: 24px;
-    }
-    .lang-icon {
-        right: calc(40px + 28px + 8px);
-        height: 28px;
-        width: 28px;
-    }
-    .menu-toggle {
-        right: 40px;
-    }
-    .menu-icon {
-        height: 28px;
     }
     footer {
         padding: 50px 40px 40px 40px;
