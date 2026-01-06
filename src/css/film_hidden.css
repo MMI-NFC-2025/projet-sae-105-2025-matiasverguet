@@ -500,3 +500,186 @@ footer {
     object-fit: contain;
     display: block;
 }
+/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
+
+/* Très petits smartphones (320px - 374px) */
+@media (max-width: 374px) {
+    .film-main {
+        max-width: 100%;
+    }
+    
+    .logo {
+        left: 16px;
+        gap: 15px;
+    }
+    
+    .logo-text {
+        font-size: 18px;
+    }
+    
+    .logo-icon {
+        height: 32px;
+    }
+    
+    .lang-icon {
+        right: calc(16px + 24px + 6px);
+        height: 22px;
+        width: 22px;
+    }
+    
+    .menu-toggle {
+        right: 16px;
+    }
+    
+    .film-content h1 {
+        font-size: 24px;
+        padding: 20px 12px 15px 12px;
+    }
+    
+    .film-description {
+        margin: 0 12px 25px 12px;
+        padding: 16px;
+        border-radius: 20px;
+    }
+    
+    .film-description p {
+        font-size: 13px;
+    }
+    
+    .film-video {
+        padding: 0 12px 30px 12px;
+    }
+    
+    .film-video video {
+        border-radius: 20px;
+    }
+    
+    footer {
+        padding: 30px 16px 25px 16px;
+    }
+}
+
+/* Petits smartphones (375px - 479px) */
+@media (min-width: 375px) and (max-width: 479px) {
+    .film-main {
+        max-width: 100%;
+    }
+    
+    .logo {
+        left: 20px;
+    }
+    
+    .lang-icon {
+        right: calc(20px + 24px + 6px);
+    }
+    
+    .menu-toggle {
+        right: 20px;
+    }
+}
+
+/* Smartphones moyens et grands (480px et plus) */
+@media (min-width: 480px) {
+    .film-main {
+        max-width: 100%;
+    }
+    
+    .logo {
+        left: 30px;
+    }
+    
+    .lang-icon {
+        right: calc(30px + 24px + 6px);
+    }
+    
+    .menu-toggle {
+        right: 30px;
+    }
+    
+    .film-content h1 {
+        font-size: 32px;
+        padding: 40px 24px 25px 24px;
+    }
+    
+    .film-description {
+        margin: 0 24px 35px 24px;
+        padding: 24px;
+    }
+    
+    .film-description p {
+        font-size: 15px;
+    }
+    
+    .film-video {
+        padding: 0 24px 45px 24px;
+    }
+}
+
+/* Tablettes portrait (600px et plus) */
+@media (min-width: 600px) {
+    .film-main {
+        max-width: 600px;
+    }
+    
+    header {
+        height: 120px;
+    }
+    
+    .logo {
+        left: 40px;
+        gap: 30px;
+    }
+    
+    .logo-icon {
+        height: 45px;
+    }
+    
+    .logo-text {
+        font-size: 24px;
+    }
+    
+    .lang-icon {
+        right: calc(40px + 28px + 8px);
+        height: 28px;
+        width: 28px;
+    }
+    
+    .menu-toggle {
+        right: 40px;
+    }
+    
+    .menu-icon {
+        height: 28px;
+    }
+    
+    .film-content h1 {
+        font-size: 36px;
+        padding: 45px 32px 30px 32px;
+    }
+    
+    .film-description {
+        margin: 0 32px 40px 32px;
+        padding: 28px;
+        border-radius: 30px;
+    }
+    
+    .film-description p {
+        font-size: 16px;
+    }
+    
+    .film-video {
+        padding: 0 32px 50px 32px;
+    }
+    
+    .film-video video {
+        border-radius: 30px;
+    }
+    
+    footer {
+        padding: 50px 40px 40px 40px;
+    }
+    
+    .footer-container {
+        max-width: 600px;
+    }
+}

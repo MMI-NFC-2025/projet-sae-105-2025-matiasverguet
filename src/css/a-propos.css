@@ -444,15 +444,155 @@ footer {
     display: block;
 }
 
+/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
 
-@media (max-width: 480px) {
+/* Très petits smartphones (320px - 374px) */
+@media (max-width: 374px) {
   .a-propos-article {
-    padding: 0 8px 32px 8px;
+    padding: 0 12px 28px 12px;
+  }
+  .a-propos-article h1 {
+    font-size: 24px;
+    padding: 20px 0;
+  }
+  .a-propos-article h2 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+  .a-propos-article p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  header {
+    height: 100px;
+  }
+  .logo {
+    left: 16px;
+    gap: 15px;
+  }
+  .logo-text {
+    font-size: 18px;
+  }
+  .logo-icon {
+    height: 32px;
+  }
+  .lang-icon {
+    right: calc(16px + 24px + 6px);
+    height: 22px;
+    width: 22px;
+  }
+  .menu-toggle {
+    right: 16px;
+  }
+  footer {
+    padding: 30px 16px 25px 16px;
+  }
+}
+
+/* Petits smartphones (375px - 479px) */
+@media (min-width: 375px) and (max-width: 479px) {
+  .a-propos-article {
+    padding: 0 16px 30px 16px;
   }
   .a-propos-article h1 {
     font-size: 26px;
+    padding: 25px 0;
   }
   .a-propos-article h2 {
     font-size: 18px;
+    margin-top: 22px;
+    margin-bottom: 14px;
+  }
+  .a-propos-article p {
+    font-size: 14px;
+  }
+  .logo {
+    left: 20px;
+  }
+  .lang-icon {
+    right: calc(20px + 24px + 6px);
+  }
+  .menu-toggle {
+    right: 20px;
   }
 }
+
+/* Smartphones moyens (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+  .a-propos-article {
+    padding: 0 20px 35px 20px;
+  }
+  .a-propos-article h1 {
+    font-size: 28px;
+    padding: 30px 0;
+  }
+  .a-propos-article h2 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .a-propos-article p {
+    font-size: 15px;
+  }
+  .logo {
+    left: 25px;
+  }
+  .lang-icon {
+    right: calc(25px + 24px + 6px);
+  }
+  .menu-toggle {
+    right: 25px;
+  }
+}
+
+/* Tablettes portrait et grands smartphones (600px et plus) */
+@media (min-width: 600px) {
+  .a-propos-article {
+    padding: 0 32px 40px 32px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .a-propos-article h1 {
+    font-size: 32px;
+    padding: 35px 0;
+  }
+  .a-propos-article h2 {
+    font-size: 22px;
+    margin-top: 28px;
+    margin-bottom: 16px;
+  }
+  .a-propos-article p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  header {
+    height: 120px;
+  }
+  .logo {
+    left: 40px;
+    gap: 30px;
+  }
+  .logo-icon {
+    height: 45px;
+  }
+  .logo-text {
+    font-size: 24px;
+  }
+  .lang-icon {
+    right: calc(40px + 28px + 8px);
+    height: 28px;
+    width: 28px;
+  }
+  .menu-toggle {
+    right: 40px;
+  }
+  .menu-icon {
+    height: 28px;
+  }
+  footer {
+    padding: 50px 40px 40px 40px;
+  }
+  .footer-container {
+    max-width: 700px;
+    margin: 0 auto;

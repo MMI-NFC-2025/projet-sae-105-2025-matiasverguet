@@ -163,21 +163,184 @@
     background-color: var(--gris);
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
+/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
+
+/* Très petits smartphones (320px - 374px) */
+@media (max-width: 374px) {
+    .contact-main {
+        padding: 30px 12px;
+        margin-top: 100px;
+    }
     .contact-container {
-        padding: 30px 20px;
+        padding: 20px 16px;
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
     }
-
+    .contact-container h1 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .form-group label {
+        font-size: 13px;
+    }
+    .form-group input,
+    .form-group textarea {
+        font-size: 13px;
+        padding: 10px;
+    }
+    .form-row input {
+        width: 100%;
+        padding: 10px;
+    }
+    .form-group textarea {
+        min-height: 100px;
+    }
+    .submit-button {
+        font-size: 14px;
+        padding: 12px 24px;
+        width: auto;
+        height: auto;
+    }
     .form-row {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 16px;
     }
+}
 
+/* Petits smartphones (375px - 479px) */
+@media (min-width: 375px) and (max-width: 479px) {
+    .contact-main {
+        padding: 35px 16px;
+        margin-top: 110px;
+    }
+    .contact-container {
+        padding: 25px 18px;
+        width: 100%;
+        height: auto;
+    }
     .contact-container h1 {
         font-size: 22px;
     }
+    .form-group label {
+        font-size: 14px;
+    }
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .form-row input {
+        width: 100%;
+    }
+}
 
+/* Smartphones moyens (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
     .contact-main {
         padding: 40px 20px;
+        margin-top: 120px;
+    }
+    .contact-container {
+        padding: 28px 22px;
+        width: 100%;
+        height: auto;
+    }
+    .contact-container h1 {
+        font-size: 24px;
+    }
+    .form-group label {
+        font-size: 14px;
+    }
+    .form-group input,
+    .form-group textarea {
+        font-size: 15px;
+    }
+    .submit-button {
+        font-size: 15px;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form-row input {
+        width: 100%;
+    }
+}
+
+/* Tablettes portrait (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+    .contact-main {
+        padding: 45px 28px;
+        margin-top: 130px;
+    }
+    .contact-container {
+        padding: 32px 28px;
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .contact-container h1 {
+        font-size: 26px;
+    }
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+    }
+    .form-row {
+        flex-direction: row;
+        gap: 22px;
+    }
+    .form-row input {
+        flex: 1;
+    }
+}
+
+/* Tablettes et écrans moyens (768px et plus) */
+@media (min-width: 768px) {
+    .contact-main {
+        padding: 50px 32px;
+        margin-top: 140px;
+    }
+    .contact-container {
+        padding: 35px 32px;
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 30px;
+    }
+    .contact-container h1 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    .form-group label {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+        padding: 14px;
+    }
+    .form-group textarea {
+        min-height: 120px;
+    }
+    .submit-button {
+        font-size: 16px;
+        padding: 14px 32px;
+        width: auto;
+        height: auto;
+    }
+    .form-row {
+        flex-direction: row;
+        gap: 24px;
+    }
+    .form-row input {
+        flex: 1;
     }
 }

@@ -697,21 +697,303 @@ footer {
     display: block;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 768px) {
+/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
+
+/* Très petits smartphones (320px - 374px) */
+@media (max-width: 374px) {
     .litterature-main {
         width: 100%;
     }
-
     .hero-section {
         width: 100%;
+        height: 280px;
     }
-
-    .litterature-content {
-        padding: 30px 15px 20px 15px;
+    .hero-text h1 {
+        font-size: 28px;
     }
-
+    .hero-text p {
+        font-size: 14px;
+    }
     .litterature-intro {
-        padding: 30px 15px 20px 15px;
+        padding: 20px 12px 16px 12px;
+    }
+    .litterature-intro h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .litterature-intro p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .litterature-content {
+        padding: 20px 12px 16px 12px;
+    }
+    .book-item {
+        padding: 16px;
+        margin-bottom: 16px;
+        border-radius: 20px;
+    }
+    .book-item h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .book-item p {
+        font-size: 13px;
+    }
+    .book-meta {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    header {
+        height: 100px;
+    }
+    .logo {
+        left: 16px;
+        gap: 15px;
+    }
+    .logo-text {
+        font-size: 18px;
+    }
+    .logo-icon {
+        height: 32px;
+    }
+    .lang-icon {
+        right: calc(16px + 24px + 6px);
+        height: 22px;
+        width: 22px;
+    }
+    .menu-toggle {
+        right: 16px;
+    }
+    footer {
+        padding: 30px 16px 25px 16px;
     }
 }
+
+/* Petits smartphones (375px - 479px) */
+@media (min-width: 375px) and (max-width: 479px) {
+    .litterature-main {
+        width: 100%;
+    }
+    .hero-section {
+        width: 100%;
+        height: 290px;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .hero-text p {
+        font-size: 15px;
+    }
+    .litterature-intro {
+        padding: 24px 16px 18px 16px;
+    }
+    .litterature-intro h2 {
+        font-size: 24px;
+    }
+    .litterature-intro p {
+        font-size: 14px;
+    }
+    .litterature-content {
+        padding: 24px 16px 18px 16px;
+    }
+    .book-item {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+    .book-item h3 {
+        font-size: 20px;
+    }
+    .book-item p {
+        font-size: 14px;
+    }
+    .logo {
+        left: 20px;
+    }
+    .lang-icon {
+        right: calc(20px + 24px + 6px);
+    }
+    .menu-toggle {
+        right: 20px;
+    }
+}
+
+/* Smartphones moyens (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+    .litterature-main {
+        width: 100%;
+    }
+    .hero-section {
+        width: 100%;
+        height: 300px;
+    }
+    .hero-text h1 {
+        font-size: 32px;
+    }
+    .hero-text p {
+        font-size: 16px;
+    }
+    .litterature-intro {
+        padding: 28px 20px 20px 20px;
+    }
+    .litterature-intro h2 {
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+    .litterature-intro p {
+        font-size: 15px;
+    }
+    .litterature-content {
+        padding: 28px 20px 20px 20px;
+    }
+    .book-item {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .book-item h3 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .book-item p {
+        font-size: 15px;
+    }
+    .book-meta {
+        font-size: 13px;
+    }
+    .logo {
+        left: 25px;
+    }
+    .lang-icon {
+        right: calc(25px + 24px + 6px);
+    }
+    .menu-toggle {
+        right: 25px;
+    }
+}
+
+/* Tablettes portrait (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+    .litterature-main {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .hero-section {
+        width: 100%;
+        height: 320px;
+    }
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    .hero-text p {
+        font-size: 17px;
+    }
+    .litterature-intro {
+        padding: 32px 28px 22px 28px;
+    }
+    .litterature-intro h2 {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+    .litterature-intro p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    .litterature-content {
+        padding: 32px 28px 22px 28px;
+    }
+    .book-item {
+        padding: 24px;
+        margin-bottom: 24px;
+        border-radius: 30px;
+    }
+    .book-item h3 {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+    .book-item p {
+        font-size: 16px;
+    }
+    .book-meta {
+        font-size: 14px;
+        margin-top: 14px;
+    }
+}
+
+/* Tablettes et écrans moyens (768px et plus) */
+@media (min-width: 768px) {
+    .litterature-main {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .hero-section {
+        width: 100%;
+        height: 350px;
+    }
+    .hero-text h1 {
+        font-size: 40px;
+    }
+    .hero-text p {
+        font-size: 18px;
+    }
+    .litterature-intro {
+        padding: 40px 32px 24px 32px;
+    }
+    .litterature-intro h2 {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+    .litterature-intro p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+    .litterature-content {
+        padding: 40px 32px 24px 32px;
+    }
+    .book-item {
+        padding: 28px;
+        margin-bottom: 28px;
+    }
+    .book-item h3 {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+    .book-item p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+    .book-meta {
+        font-size: 15px;
+        margin-top: 16px;
+    }
+    header {
+        height: 120px;
+    }
+    .logo {
+        left: 40px;
+        gap: 30px;
+    }
+    .logo-icon {
+        height: 45px;
+    }
+    .logo-text {
+        font-size: 24px;
+    }
+    .lang-icon {
+        right: calc(40px + 28px + 8px);
+        height: 28px;
+        width: 28px;
+    }
+    .menu-toggle {
+        right: 40px;
+    }
+    .menu-icon {
+        height: 28px;
+    }
+    footer {
+        padding: 50px 40px 40px 40px;
+    }
+    .footer-container {
+        max-width: 900px;
+        margin: 0 auto;

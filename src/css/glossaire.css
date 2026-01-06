@@ -407,14 +407,166 @@ footer {
 }
 
 .social-icons img {
+.social-icons img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     display: block;
 }
 
-@media (max-width: 480px) {
+/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
+
+/* Très petits smartphones (320px - 374px) */
+@media (max-width: 374px) {
     .glossaire-container {
-        padding: 0 8px 32px 8px;
+        padding: 0 12px 28px 12px;
+    }
+    .glossaire-container h1 {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+    .glossaire-item h2 {
+        font-size: 18px;
+    }
+    .glossaire-item p {
+        font-size: 13px;
+    }
+    .glossaire-item figure img {
+        border-radius: 20px;
+    }
+    header {
+        height: 100px;
+    }
+    .logo {
+        left: 16px;
+        gap: 15px;
+    }
+    .logo-text {
+        font-size: 18px;
+    }
+    .logo-icon {
+        height: 32px;
+    }
+    .lang-icon {
+        right: calc(16px + 24px + 6px);
+        height: 22px;
+        width: 22px;
+    }
+    .menu-toggle {
+        right: 16px;
+    }
+    footer {
+        padding: 30px 16px 25px 16px;
+    }
+}
+
+/* Petits smartphones (375px - 479px) */
+@media (min-width: 375px) and (max-width: 479px) {
+    .glossaire-container {
+        padding: 0 16px 30px 16px;
+    }
+    .glossaire-container h1 {
+        font-size: 26px;
+    }
+    .glossaire-item h2 {
+        font-size: 20px;
+    }
+    .glossaire-item p {
+        font-size: 14px;
+    }
+    .logo {
+        left: 20px;
+    }
+    .lang-icon {
+        right: calc(20px + 24px + 6px);
+    }
+    .menu-toggle {
+        right: 20px;
+    }
+}
+
+/* Smartphones moyens (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+    .glossaire-container {
+        padding: 0 20px 35px 20px;
+    }
+    .glossaire-container h1 {
+        font-size: 28px;
+        padding: 30px 0;
+    }
+    .glossaire-item h2 {
+        font-size: 22px;
+    }
+    .glossaire-item p {
+        font-size: 15px;
+    }
+    .logo {
+        left: 25px;
+    }
+    .lang-icon {
+        right: calc(25px + 24px + 6px);
+    }
+    .menu-toggle {
+        right: 25px;
+    }
+}
+
+/* Tablettes portrait et grands smartphones (600px et plus) */
+@media (min-width: 600px) {
+    .glossaire-container {
+        padding: 0 32px 40px 32px;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .glossaire-container h1 {
+        font-size: 32px;
+        padding: 35px 0;
+    }
+    .glossaire-item {
+        padding: 28px;
+        margin-bottom: 28px;
+        border-radius: 30px;
+    }
+    .glossaire-item h2 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+    .glossaire-item p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    .glossaire-item figure img {
+        border-radius: 30px;
+    }
+    header {
+        height: 120px;
+    }
+    .logo {
+        left: 40px;
+        gap: 30px;
+    }
+    .logo-icon {
+        height: 45px;
+    }
+    .logo-text {
+        font-size: 24px;
+    }
+    .lang-icon {
+        right: calc(40px + 28px + 8px);
+        height: 28px;
+        width: 28px;
+    }
+    .menu-toggle {
+        right: 40px;
+    }
+    .menu-icon {
+        height: 28px;
+    }
+    footer {
+        padding: 50px 40px 40px 40px;
+    }
+    .footer-container {
+        max-width: 700px;
+        margin: 0 auto;
     }
 }

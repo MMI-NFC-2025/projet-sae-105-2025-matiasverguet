@@ -684,9 +684,236 @@ footer {
     display: block;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 768px) {
+/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
+
+/* Très petits smartphones (320px - 374px) */
+@media (max-width: 374px) {
     .lise-main {
         width: 100%;
+    }
+    .hero-section,
+    .content-section,
+    .timeline-section {
+        padding: 20px 12px;
+    }
+    .hero-section h1 {
+        font-size: 28px;
+    }
+    .content-section h2,
+    .timeline-section h2 {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+    .content-section p,
+    .timeline-item p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .timeline-item {
+        padding: 16px;
+        margin-bottom: 16px;
+        border-radius: 20px;
+    }
+    .timeline-item h3 {
+        font-size: 18px;
+    }
+    header {
+        height: 100px;
+    }
+    .logo {
+        left: 16px;
+        gap: 15px;
+    }
+    .logo-text {
+        font-size: 18px;
+    }
+    .logo-icon {
+        height: 32px;
+    }
+    .lang-icon {
+        right: calc(16px + 24px + 6px);
+        height: 22px;
+        width: 22px;
+    }
+    .menu-toggle {
+        right: 16px;
+    }
+    footer {
+        padding: 30px 16px 25px 16px;
+    }
+}
+
+/* Petits smartphones (375px - 479px) */
+@media (min-width: 375px) and (max-width: 479px) {
+    .lise-main {
+        width: 100%;
+    }
+    .hero-section,
+    .content-section,
+    .timeline-section {
+        padding: 24px 16px;
+    }
+    .hero-section h1 {
+        font-size: 30px;
+    }
+    .content-section h2,
+    .timeline-section h2 {
+        font-size: 24px;
+    }
+    .content-section p,
+    .timeline-item p {
+        font-size: 14px;
+    }
+    .timeline-item h3 {
+        font-size: 20px;
+    }
+    .logo {
+        left: 20px;
+    }
+    .lang-icon {
+        right: calc(20px + 24px + 6px);
+    }
+    .menu-toggle {
+        right: 20px;
+    }
+}
+
+/* Smartphones moyens (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+    .lise-main {
+        width: 100%;
+    }
+    .hero-section,
+    .content-section,
+    .timeline-section {
+        padding: 28px 20px;
+    }
+    .hero-section h1 {
+        font-size: 32px;
+    }
+    .content-section h2,
+    .timeline-section h2 {
+        font-size: 26px;
+    }
+    .content-section p,
+    .timeline-item p {
+        font-size: 15px;
+    }
+    .timeline-item {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .timeline-item h3 {
+        font-size: 22px;
+    }
+    .logo {
+        left: 25px;
+    }
+    .lang-icon {
+        right: calc(25px + 24px + 6px);
+    }
+    .menu-toggle {
+        right: 25px;
+    }
+}
+
+/* Tablettes portrait (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+    .lise-main {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .hero-section,
+    .content-section,
+    .timeline-section {
+        padding: 32px 28px;
+    }
+    .hero-section h1 {
+        font-size: 36px;
+    }
+    .content-section h2,
+    .timeline-section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .content-section p,
+    .timeline-item p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    .timeline-item {
+        padding: 24px;
+        margin-bottom: 24px;
+        border-radius: 30px;
+    }
+    .timeline-item h3 {
+        font-size: 24px;
+    }
+}
+
+/* Tablettes et écrans moyens (768px et plus) */
+@media (min-width: 768px) {
+    .lise-main {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .hero-section,
+    .content-section,
+    .timeline-section {
+        padding: 40px 32px;
+    }
+    .hero-section h1 {
+        font-size: 40px;
+    }
+    .content-section h2,
+    .timeline-section h2 {
+        font-size: 30px;
+        margin-bottom: 24px;
+    }
+    .content-section p,
+    .timeline-item p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+    .timeline-item {
+        padding: 28px;
+        margin-bottom: 28px;
+    }
+    .timeline-item h3 {
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+    header {
+        height: 120px;
+    }
+    .logo {
+        left: 40px;
+        gap: 30px;
+    }
+    .logo-icon {
+        height: 45px;
+    }
+    .logo-text {
+        font-size: 24px;
+    }
+    .lang-icon {
+        right: calc(40px + 28px + 8px);
+        height: 28px;
+        width: 28px;
+    }
+    .menu-toggle {
+        right: 40px;
+    }
+    .menu-icon {
+        height: 28px;
+    }
+    footer {
+        padding: 50px 40px 40px 40px;
+    }
+    .footer-container {
+        max-width: 900px;
+        margin: 0 auto;
     }
 }

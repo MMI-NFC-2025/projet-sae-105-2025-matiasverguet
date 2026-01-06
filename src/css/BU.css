@@ -716,10 +716,183 @@ footer {
     display: block;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 768px) {
+/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
+
+/* Très petits smartphones (320px - 374px) */
+@media (max-width: 374px) {
     .bu-content {
         width: 100%;
-        padding: 30px 15px 40px 15px;
+        padding: 20px 12px 30px 12px;
+    }
+    .bu-content h1 {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+    .bu-content h2 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+    .bu-content p,
+    .bu-content li {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .bu-content ul {
+        padding-left: 20px;
+    }
+    header {
+        height: 100px;
+    }
+    .logo {
+        left: 16px;
+        gap: 15px;
+    }
+    .logo-text {
+        font-size: 18px;
+    }
+    .logo-icon {
+        height: 32px;
+    }
+    .lang-icon {
+        right: calc(16px + 24px + 6px);
+        height: 22px;
+        width: 22px;
+    }
+    .menu-toggle {
+        right: 16px;
+    }
+    footer {
+        padding: 30px 16px 25px 16px;
+    }
+}
+
+/* Petits smartphones (375px - 479px) */
+@media (min-width: 375px) and (max-width: 479px) {
+    .bu-content {
+        width: 100%;
+        padding: 25px 16px 35px 16px;
+    }
+    .bu-content h1 {
+        font-size: 26px;
+    }
+    .bu-content h2 {
+        font-size: 20px;
+    }
+    .bu-content p,
+    .bu-content li {
+        font-size: 14px;
+    }
+    .logo {
+        left: 20px;
+    }
+    .lang-icon {
+        right: calc(20px + 24px + 6px);
+    }
+    .menu-toggle {
+        right: 20px;
+    }
+}
+
+/* Smartphones moyens (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+    .bu-content {
+        width: 100%;
+        padding: 28px 20px 38px 20px;
+    }
+    .bu-content h1 {
+        font-size: 28px;
+    }
+    .bu-content h2 {
+        font-size: 22px;
+    }
+    .bu-content p,
+    .bu-content li {
+        font-size: 15px;
+    }
+    .logo {
+        left: 25px;
+    }
+    .lang-icon {
+        right: calc(25px + 24px + 6px);
+    }
+    .menu-toggle {
+        right: 25px;
+    }
+}
+
+/* Tablettes portrait et grands smartphones (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+    .bu-content {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 32px 28px 42px 28px;
+    }
+    .bu-content h1 {
+        font-size: 30px;
+    }
+    .bu-content h2 {
+        font-size: 24px;
+    }
+    .bu-content p,
+    .bu-content li {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+}
+
+/* Tablettes et écrans moyens (768px et plus) */
+@media (min-width: 768px) {
+    .bu-content {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 35px 32px 45px 32px;
+    }
+    .bu-content h1 {
+        font-size: 32px;
+        padding: 30px 0;
+    }
+    .bu-content h2 {
+        font-size: 26px;
+        margin-top: 30px;
+        margin-bottom: 18px;
+    }
+    .bu-content p,
+    .bu-content li {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+    header {
+        height: 120px;
+    }
+    .logo {
+        left: 40px;
+        gap: 30px;
+    }
+    .logo-icon {
+        height: 45px;
+    }
+    .logo-text {
+        font-size: 24px;
+    }
+    .lang-icon {
+        right: calc(40px + 28px + 8px);
+        height: 28px;
+        width: 28px;
+    }
+    .menu-toggle {
+        right: 40px;
+    }
+    .menu-icon {
+        height: 28px;
+    }
+    footer {
+        padding: 50px 40px 40px 40px;
+    }
+    .footer-container {
+        max-width: 800px;
+        margin: 0 auto;
     }
 }
