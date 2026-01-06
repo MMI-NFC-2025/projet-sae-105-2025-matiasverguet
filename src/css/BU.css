@@ -9,6 +9,19 @@
     box-sizing: border-box;
 }
 
+/* Screen Reader Only - Hidden visually but accessible */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 body {
     font-family: var(--font-main);
     line-height: 1.6;
@@ -586,6 +599,7 @@ footer {
     margin: 0;
 }
 
+.footer-nav h3,
 .footer-nav h4 {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;
@@ -596,6 +610,7 @@ footer {
     color: var(--frise);
 }
 
+.footer-legal h3,
 .footer-legal h4 {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;
@@ -606,6 +621,7 @@ footer {
     color: var(--frise);
 }
 
+.footer-social h3,
 .footer-social h4 {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;
@@ -615,6 +631,7 @@ footer {
     margin: 0 0 15px 0;
 }
 
+.footer-contact h3,
 .footer-contact h4 {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;

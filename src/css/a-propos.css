@@ -1,6 +1,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@400;700&display=swap');
 @import url('variables.css');
+
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Screen Reader Only - Hidden visually but accessible */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 .menu {
     position: fixed;
     top: 0;
@@ -86,8 +106,10 @@
 header {
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     padding: 0;
     width: 100%;
@@ -354,9 +376,13 @@ footer {
     margin: 0;
 }
 
+.footer-nav h3,
 .footer-nav h4,
+.footer-contact h3,
 .footer-contact h4,
+.footer-legal h3,
 .footer-legal h4,
+.footer-social h3,
 .footer-social h4 {
     font-family: 'Inria Sans', sans-serif;
     font-size: 14px;
@@ -367,6 +393,7 @@ footer {
     color: var(--frise);
 }
 
+.footer-social h3,
 .footer-social h4 {
     margin: 0 0 8px 0;
 }
