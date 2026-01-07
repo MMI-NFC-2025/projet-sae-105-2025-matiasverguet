@@ -9,11 +9,18 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: var(--font-main);
     line-height: 1.6;
     color: var(--noir);
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
     background-color: var(--blanc);
 }
 
@@ -41,7 +48,7 @@ button {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: #000;
     color: #fff;
@@ -84,7 +91,7 @@ button {
 /* Menu burger overlay corrections */
 .menu__list {
     list-style: none;
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     display: flex;
     flex-direction: column;
