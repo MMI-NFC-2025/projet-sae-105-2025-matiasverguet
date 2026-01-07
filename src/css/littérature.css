@@ -1,8 +1,6 @@
-/* ===== IMPORTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@400;700&display=swap');
 @import url('variables.css');
 
-/* ===== RESET & BASE ===== */
 * {
     margin: 0;
     padding: 0;
@@ -35,8 +33,6 @@ button {
     font-family: inherit;
 }
 
-/* ===== HEADER ===== */
-/* ===== MENU BURGER OVERLAY ===== */
 .menu {
     position: fixed;
     top: 0;
@@ -125,7 +121,7 @@ button {
 header {
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     padding: 0;
@@ -242,9 +238,7 @@ header {
 .main-nav ul li a:hover {
     color: var(--gris);
 }
-/* ===== LITTERATURE PAGE ===== */
 
-/* ===== MAIN CONTENT ===== */
 .litterature-main {
     background-color: #ffffff;
     color: #000000;
@@ -257,7 +251,6 @@ header {
     box-sizing: border-box;
 }
 
-/* ===== HERO SECTION ===== */
 .hero-section {
     width: 393px;
     height: auto;
@@ -275,7 +268,6 @@ header {
     display: block;
 }
 
-/* ===== INTRODUCTION SECTION ===== */
 .litterature-intro {
     background-color: transparent;
     padding: 30px 20px 20px 20px;
@@ -287,6 +279,7 @@ header {
 .litterature-header {
     display: flex;
     flex-direction: column;
+    padding-top: 100px;
 }
 
 .published-date {
@@ -328,7 +321,6 @@ header {
     text-shadow: none !important;
 }
 
-/* ===== CONTENT SECTION ===== */
 .litterature-content {
     background-color: transparent !important;
     padding: 0 20px 20px 0px !important;
@@ -357,7 +349,6 @@ header {
     text-shadow: none !important;
 }
 
-/* ===== SECTION HEADERS ===== */
 .examples-section h2,
 .impact-section h2,
 .fiction-section h2 {
@@ -375,7 +366,6 @@ header {
     text-shadow: none !important;
 }
 
-/* ===== EXAMPLES SECTION ===== */
 .examples-section {
     margin-bottom: 40px;
     padding: 0;
@@ -419,7 +409,6 @@ header {
     line-height: 140%;
 }
 
-/* ===== BOOKS SECTION ===== */
 .books-section {
     display: flex;
     flex-direction: row;
@@ -442,7 +431,6 @@ header {
     object-fit: cover;
 }
 
-/* ===== IMPACT SECTION ===== */
 .impact-section {
     margin-bottom: 40px;
     padding: 0;
@@ -472,7 +460,6 @@ header {
     text-shadow: none !important;
 }
 
-/* ===== FICTION SECTION ===== */
 .fiction-section {
     margin-bottom: 0px;
     padding: 0;
@@ -504,7 +491,6 @@ header {
 
 
 
-/* ===== FOOTER ===== */
 footer {
     background-color: var(--noir);
     color: var(--blanc);
@@ -697,9 +683,7 @@ footer {
     display: block;
 }
 
-/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
 
-/* Très petits smartphones (320px - 374px) */
 @media (max-width: 374px) {
     .litterature-main {
         width: 100%;
@@ -749,7 +733,6 @@ footer {
     }
 }
 
-/* Petits smartphones (375px - 479px) */
 @media (min-width: 375px) and (max-width: 479px) {
     .litterature-main {
         width: 100%;
@@ -788,7 +771,6 @@ footer {
     }
 }
 
-/* Smartphones moyens (480px - 599px) */
 @media (min-width: 480px) and (max-width: 599px) {
     .litterature-main {
         width: 100%;
@@ -832,7 +814,6 @@ footer {
     }
 }
 
-/* Tablettes portrait (600px - 767px) */
 @media (min-width: 600px) and (max-width: 767px) {
     .litterature-main {
         width: 100%;
@@ -881,7 +862,6 @@ footer {
     }
 }
 
-/* Tablettes et écrans moyens (768px et plus) */
 @media (min-width: 768px) {
     .litterature-main {
         width: 100%;

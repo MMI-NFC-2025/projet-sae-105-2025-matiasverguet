@@ -1,8 +1,6 @@
-/* ===== IMPORTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@300;400;700&display=swap');
 @import url('variables.css');
 
-/* ===== RESET & BASE ===== */
 * {
     margin: 0;
     padding: 0;
@@ -35,8 +33,6 @@ button {
     font-family: inherit;
 }
 
-/* ===== HEADER ===== */
-/* ===== MENU BURGER OVERLAY ===== */
 .menu {
     position: fixed;
     top: 0;
@@ -216,7 +212,6 @@ header {
     opacity: 0.7;
 }
 
-/* ===== BACK BUTTON ===== */
 .back-button {
     position: absolute;
     left: 16px;
@@ -239,9 +234,7 @@ header {
     height: 20px;
 }
 
-/* ===== FILM PAGE ===== */
 
-/* ===== MAIN CONTENT ===== */
 .film-main {
     background-color: #ffffff;
     width: 100%;
@@ -249,7 +242,7 @@ header {
     margin: 0 auto;
 }
 
-/* ===== HERO SECTION ===== */
+
 .film-hero {
     width: 100%;
     padding: 0;
@@ -268,7 +261,6 @@ header {
     object-fit: cover;
 }
 
-/* ===== FILM CONTENT ===== */
 .film-content {
     padding: 0;
     width: 100%;
@@ -286,7 +278,6 @@ header {
     margin: 0;
 }
 
-/* ===== FILM DESCRIPTION BOX ===== */
 .film-description {
     margin: 0 16px 30px 16px;
     background-color: var(--gris);
@@ -318,7 +309,6 @@ header {
     font-style: italic;
 }
 
-/* ===== VIDEO SECTION ===== */
 .film-video {
     width: 100%;
     padding: 0 16px 40px 16px;
@@ -331,7 +321,6 @@ header {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== FOOTER ===== */
 footer {
     background-color: var(--noir);
     color: var(--blanc);
@@ -523,9 +512,7 @@ footer {
     object-fit: contain;
     display: block;
 }
-/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
 
-/* Très petits smartphones (320px - 374px) */
 @media (max-width: 374px) {
     .film-main {
         max-width: 100%;
@@ -568,14 +555,14 @@ footer {
     }
 }
 
-/* Petits smartphones (375px - 479px) */
+
 @media (min-width: 375px) and (max-width: 479px) {
     .film-main {
         max-width: 100%;
     }
 }
 
-/* Smartphones moyens et grands (480px et plus) */
+
 @media (min-width: 480px) {
     .film-main {
         max-width: 100%;
@@ -609,7 +596,7 @@ footer {
     }
 }
 
-/* Tablettes portrait (600px et plus) */
+
 @media (min-width: 600px) {
     .film-main {
         max-width: 600px;

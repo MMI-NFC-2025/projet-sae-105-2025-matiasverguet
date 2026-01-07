@@ -94,7 +94,7 @@
 header {
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     padding: 0;
@@ -198,6 +198,7 @@ header {
 
 .glossaire-hero-img {
     width: 100%;
+    padding-top: 100px;
     height: auto;
     display: block;
 }
@@ -414,9 +415,7 @@ footer {
     display: block;
 }
 
-/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
 
-/* Très petits smartphones (320px - 374px) */
 @media (max-width: 374px) {
     .glossaire-container {
         padding: 0 12px 28px 12px;
@@ -460,7 +459,6 @@ footer {
     }
 }
 
-/* Petits smartphones (375px - 479px) */
 @media (min-width: 375px) and (max-width: 479px) {
     .glossaire-container {
         padding: 0 16px 30px 16px;
@@ -485,7 +483,6 @@ footer {
     }
 }
 
-/* Smartphones moyens (480px - 599px) */
 @media (min-width: 480px) and (max-width: 599px) {
     .glossaire-container {
         padding: 0 20px 35px 20px;
@@ -511,7 +508,6 @@ footer {
     }
 }
 
-/* Tablettes portrait et grands smartphones (600px et plus) */
 @media (min-width: 600px) {
     .glossaire-container {
         padding: 0 32px 40px 32px;
@@ -569,4 +565,5 @@ footer {
         max-width: 700px;
         margin: 0 auto;
     }
+}
 }

@@ -1,8 +1,6 @@
-/* ===== IMPORTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@400;700&display=swap');
 @import url('variables.css');
 
-/* ===== RESET & BASE ===== */
 * {
     margin: 0;
     padding: 0;
@@ -38,8 +36,6 @@ button {
     font-family: inherit;
 }
 
-/* ===== HEADER ===== */
-/* ===== MENU BURGER OVERLAY ===== */
 .menu {
     position: fixed;
     top: 0;
@@ -128,7 +124,7 @@ button {
 header {
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     padding: 0;
@@ -247,9 +243,6 @@ header {
     color: var(--gris);
 }
 
-/* ===== THEORIE PAGE ===== */
-
-/* ===== MAIN CONTENT ===== */
 .theorie-main {
     background-color: #ffffff;
     color: #000000;
@@ -261,13 +254,13 @@ header {
     flex-direction: column;
 }
 
-/* ===== HERO SECTION ===== */
 .theorie-hero {
     width: 393px;
     height: 220px;
     overflow: hidden;
     background-color: #000000;
     margin: 0;
+    margin-top: 110px;
 }
 
 .theorie-hero-img {
@@ -278,7 +271,6 @@ header {
     display: block;
 }
 
-/* ===== CONTENT SECTION ===== */
 .theorie-content {
     background-color: transparent;
     padding: 40px 20px 20px 10px;
@@ -325,7 +317,6 @@ header {
 
 
 
-/* ===== DIVIDER SECTION ===== */
 .theorie-divider {
     position: relative;
     width: calc(100% + 40px);
@@ -363,7 +354,6 @@ header {
 
 
 
-/* ===== CONTENT SECTIONS ===== */
 .theorie-section {
     margin-bottom: 35px;
     padding: 25px 15px;
@@ -419,7 +409,6 @@ header {
     margin-bottom: 0;
 }
 
-/* ===== DIAGRAM SECTION ===== */
 .theorie-diagram {
     margin-bottom: 35px;
     padding: 1px 20px;
@@ -467,7 +456,6 @@ header {
     width: 100%;
 }
 
-/* ===== LIST STYLES ===== */
 .theorie-list {
     list-style: none;
     padding: 0;
@@ -496,7 +484,6 @@ header {
     font-size: 16px;
 }
 
-/* ===== NOTE BOX ===== */
 .theorie-note {
     background-color: #ffffff;
     padding: 20px;
@@ -528,7 +515,6 @@ header {
     font-weight: 700 !important;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (min-width: 768px) {
     .theorie-content {
         padding: 50px 40px 100px 40px;
@@ -598,7 +584,6 @@ header {
     }
 }
 
-/* ===== FOOTER ===== */
 footer {
     background-color: var(--noir);
     color: var(--blanc);
@@ -792,7 +777,6 @@ footer {
     display: block;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;

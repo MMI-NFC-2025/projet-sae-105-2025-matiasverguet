@@ -1,6 +1,6 @@
 @import url('variables.css');
 
-/* Hero Section */
+
 .hero-section {
     width: 100%;
     height: auto;
@@ -13,7 +13,7 @@
     display: block;
 }
 
-/* Contact Main */
+
 .contact-main {
     padding: 60px 23px;
     background-color: var(--blanc);
@@ -46,7 +46,7 @@
     letter-spacing: -1%;
 }
 
-/* Form Styles */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -139,7 +139,6 @@
     font-family: 'Inria Sans', Arial, sans-serif;
 }
 
-/* Submit Button */
 .submit-button {
     align-self: center;
     background-color: var(--gris);
@@ -164,9 +163,6 @@
     background-color: var(--gris);
 }
 
-/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
-
-/* Très petits smartphones (320px - 374px) */
 @media (max-width: 374px) {
     .contact-main {
         padding: 30px 12px;
@@ -209,7 +205,7 @@
     }
 }
 
-/* Petits smartphones (375px - 479px) */
+
 @media (min-width: 375px) and (max-width: 479px) {
     .contact-main {
         padding: 35px 16px;
@@ -239,7 +235,7 @@
     }
 }
 
-/* Smartphones moyens (480px - 599px) */
+
 @media (min-width: 480px) and (max-width: 599px) {
     .contact-main {
         padding: 40px 20px;
@@ -272,7 +268,7 @@
     }
 }
 
-/* Tablettes portrait (600px - 767px) */
+
 @media (min-width: 600px) and (max-width: 767px) {
     .contact-main {
         padding: 45px 28px;
@@ -301,7 +297,7 @@
     }
 }
 
-/* Tablettes et écrans moyens (768px et plus) */
+
 @media (min-width: 768px) {
     .contact-main {
         padding: 50px 32px;

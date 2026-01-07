@@ -1,8 +1,6 @@
-/* ===== IMPORTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@400;700&display=swap');
 @import url('variables.css');
 
-/* ===== RESET & BASE ===== */
 * {
     margin: 0;
     padding: 0;
@@ -42,8 +40,6 @@ button {
     font-family: inherit;
 }
 
-/* ===== HEADER ===== */
-/* ===== MENU BURGER OVERLAY ===== */
 .menu {
     position: fixed;
     top: 0;
@@ -88,7 +84,6 @@ button {
     width: 20px;
     height: 20px;
 }
-/* Menu burger overlay corrections */
 .menu__list {
     list-style: none;
     width: 100%;
@@ -122,11 +117,10 @@ button {
     margin: 0 auto;
     overflow-wrap: break-word;
 }
-/* bugfix: suppression accolade orpheline et règle vide */
 header {
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     padding: 0;
@@ -244,7 +238,6 @@ header {
     color: var(--gris);
 }
 
-/* ===== HERO SECTION ===== */
 .hero {
     position: relative;
     width: 100%;
@@ -279,7 +272,6 @@ header {
     text-align: right;
 }
 
-/* ===== MMI SECTION ===== */
 .mmi-section {
     background-color: var(--blanc);
     padding: 2rem 1rem 0 1rem;
@@ -313,7 +305,6 @@ header {
     background: transparent;
 }
 
-/* ===== BIOGRAPHIE SECTION ===== */
 .biographie {
     padding: 32px 1rem 100px 1rem;
     background-color: var(--blanc);
@@ -410,7 +401,6 @@ header {
     transform: none;
 }
 
-/* ===== FRISE CHRONOLOGIQUE ===== */
 .frise {
     padding: 80px 1rem;
     background-color: var(--blanc);
@@ -520,7 +510,6 @@ header {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== SECTIONS COMMUNES (Théorie, Littérature, BU, Films) ===== */
 .theorie,
 .litterature,
 .bu,
@@ -615,7 +604,6 @@ header {
     margin-bottom: 7px;
 }
 
-/* ===== LITTÉRATURE IMAGES ===== */
 .litterature-images {
     display: flex;
     justify-content: center;
@@ -636,7 +624,6 @@ header {
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== FILMS GRID ===== */
 .films-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -659,7 +646,6 @@ header {
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== FOOTER ===== */
 footer {
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -742,7 +728,6 @@ footer {
     transform: scale(1.1);
 }
 
-/* ===== RESPONSIVE ===== */
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
@@ -783,7 +768,7 @@ footer {
     .hero {
         position: absolute;
         top: 286px;
-        right: 107px; /* 393px - 286px = 107px (aligné à droite) */
+        right: 107px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -805,7 +790,6 @@ footer {
     }
 }
 
-/* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -823,7 +807,6 @@ footer {
     animation: fadeIn 1s ease-out;
 }
 
-/* ===== UTILITIES ===== */
 .text-center {
     text-align: center;
 }
@@ -844,7 +827,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* ===== FOOTER ===== */
+
 footer {
     background-color: var(--noir);
     color: var(--blanc);

@@ -1,8 +1,6 @@
-/* ===== IMPORTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@400;700&display=swap');
 @import url('variables.css');
 
-/* ===== RESET & BASE ===== */
 * {
     margin: 0;
     padding: 0;
@@ -35,8 +33,7 @@ button {
     font-family: inherit;
 }
 
-/* ===== HEADER ===== */
-/* ===== MENU BURGER OVERLAY ===== */
+
 .menu {
     position: fixed;
     top: 0;
@@ -243,9 +240,6 @@ header {
     color: var(--gris);
 }
 
-/* ===== LISE PAGE ===== */
-
-/* ===== HERO SECTION ===== */
 .hero-section {
     width: 100%;
     height: auto;
@@ -280,7 +274,6 @@ header {
     font-style: italic;
 }
 
-/* ===== MAIN CONTENT ===== */
 .lise-main {
     background-color: var(--blanc);
     color: var(--noir);
@@ -290,7 +283,6 @@ header {
     box-sizing: border-box;
 }
 
-/* ===== INTRODUCTION SECTION ===== */
 .lise-intro {
     background-color: transparent;
     padding: 30px 20px 20px 20px;
@@ -334,7 +326,6 @@ header {
     padding-left: 10px;
 }
 
-/* ===== CONTENT SECTION ===== */
 .lise-content {
     background-color: transparent;
     padding: 0 20px 20px 20px;
@@ -342,7 +333,6 @@ header {
     margin: 0;
 }
 
-/* ===== BIO SECTION ===== */
 .bio-section {
     margin-bottom: 30px;
     padding-left: 10px;
@@ -359,7 +349,6 @@ header {
     margin: 0;
 }
 
-/* ===== SECTION HEADERS ===== */
 .discovery-section h2,
 .mathilda-section h2,
 .video-section h2,
@@ -377,7 +366,6 @@ header {
     padding-left: 10px;
 }
 
-/* ===== DISCOVERY SECTION ===== */
 .discovery-section {
     margin-bottom: 30px;
 }
@@ -408,7 +396,6 @@ header {
     letter-spacing: -0.01em;
 }
 
-/* ===== SCIENCE IMAGE ===== */
 .science-image {
     margin: 30px 0;
     width: 100%;
@@ -421,7 +408,6 @@ header {
     filter: grayscale(100%);
 }
 
-/* ===== MATHILDA SECTION ===== */
 .mathilda-section {
     margin-bottom: 30px;
 }
@@ -438,7 +424,6 @@ header {
     padding-left: 10px;
 }
 
-/* ===== VIDEO SECTION ===== */
 .video-section {
     margin-bottom: 30px;
 }
@@ -459,7 +444,6 @@ header {
     font-style: italic;
 }
 
-/* ===== MORE INFO SECTION ===== */
 .more-info-section {
     margin-bottom: 30px;
 }
@@ -491,7 +475,6 @@ header {
     opacity: 0.7;
 }
 
-/* ===== FOOTER ===== */
 footer {
     background-color: var(--noir);
     color: var(--blanc);
@@ -684,9 +667,7 @@ footer {
     display: block;
 }
 
-/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
 
-/* Très petits smartphones (320px - 374px) */
 @media (max-width: 374px) {
     .lise-main {
         width: 100%;
@@ -722,7 +703,6 @@ footer {
     }
 }
 
-/* Petits smartphones (375px - 479px) */
 @media (min-width: 375px) and (max-width: 479px) {
     .lise-main {
         width: 100%;
@@ -748,7 +728,6 @@ footer {
     }
 }
 
-/* Smartphones moyens (480px - 599px) */
 @media (min-width: 480px) and (max-width: 599px) {
     .lise-main {
         width: 100%;
@@ -778,7 +757,6 @@ footer {
     }
 }
 
-/* Tablettes portrait (600px - 767px) */
 @media (min-width: 600px) and (max-width: 767px) {
     .lise-main {
         width: 100%;
@@ -813,7 +791,6 @@ footer {
     }
 }
 
-/* Tablettes et écrans moyens (768px et plus) */
 @media (min-width: 768px) {
     .lise-main {
         width: 100%;

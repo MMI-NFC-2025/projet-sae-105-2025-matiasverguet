@@ -1,6 +1,5 @@
 @import url('variables.css');
 
-/* Hero Section */
 .hero-section {
     width: 100%;
     display: flex;
@@ -19,6 +18,7 @@
     max-width: 100%;
     padding: 200px 0px 40px 0px;
     margin: 0;
+    margin-top: 80px;
 }
 
 .hero-text .date {
@@ -50,15 +50,15 @@
     letter-spacing: -1%;
 }
 
-/* Main Content */
-main {
+.main {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 23px 60px 23px;
 }
 
 main section {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+    padding-top: 50px;
 }
 
 .section-title {
@@ -94,7 +94,7 @@ main section {
     grid-template-columns: 1fr;
 }
 
-/* Image Gallery */
+
 .image-gallery {
     display: grid !important;
     grid-template-columns: repeat(2, 120px) !important;
@@ -133,9 +133,7 @@ main section {
     color: var(--blanc);
 }
 
-/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
 
-/* Très petits smartphones (320px - 374px) */
 @media (max-width: 374px) {
     .section-content {
         grid-template-columns: 1fr;
@@ -168,7 +166,6 @@ main section {
     }
 }
 
-/* Petits smartphones (375px - 479px) */
 @media (min-width: 375px) and (max-width: 479px) {
     .section-content {
         grid-template-columns: 1fr;
@@ -198,7 +195,6 @@ main section {
     }
 }
 
-/* Smartphones moyens (480px - 599px) */
 @media (min-width: 480px) and (max-width: 599px) {
     .section-content {
         grid-template-columns: 1fr;
@@ -228,7 +224,6 @@ main section {
     }
 }
 
-/* Tablettes portrait (600px - 767px) */
 @media (min-width: 600px) and (max-width: 767px) {
     .section-content {
         grid-template-columns: 1fr 1fr;
@@ -258,7 +253,6 @@ main section {
     }
 }
 
-/* Tablettes et écrans moyens (768px et plus) */
 @media (min-width: 768px) {
     .section-content {
         grid-template-columns: 1fr 1fr;
@@ -294,3 +288,5 @@ main section {
     .footer-container {
         max-width: 1000px;
         margin: 0 auto;
+    }
+}

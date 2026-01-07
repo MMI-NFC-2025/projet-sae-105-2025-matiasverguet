@@ -1,15 +1,12 @@
-/* ===== IMPORTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@300;400;700&display=swap');
 @import url('variables.css');
 
-/* ===== RESET & BASE ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Screen Reader Only - Hidden visually but accessible */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -48,8 +45,6 @@ button {
     font-family: inherit;
 }
 
-/* ===== HEADER ===== */
-/* ===== MENU BURGER OVERLAY ===== */
 .menu {
     position: fixed;
     top: 0;
@@ -138,7 +133,7 @@ button {
 header {
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     padding: 0;
@@ -256,9 +251,7 @@ header {
     color: var(--gris);
 }
 
-/* ===== BU PAGE ===== */
 
-/* ===== MAIN CONTENT ===== */
 .bu-main {
     background-color: #ffffff;
     color: #000000;
@@ -268,7 +261,6 @@ header {
     box-sizing: border-box;
 }
 
-/* ===== HERO SECTION ===== */
 .bu-hero {
     width: 100%;
     height: auto;
@@ -284,6 +276,7 @@ header {
 }
 
 .bu-hero-img {
+    padding-top: 100px;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -303,7 +296,6 @@ header {
     font-style: italic;
 }
 
-/* ===== CONTENT SECTION ===== */
 .bu-content {
     background-color: transparent;
     padding: 30px 0 40px 0;
@@ -351,7 +343,7 @@ header {
     padding-right: 16px;
 }
 
-/* ===== INTRO SECTION ===== */
+
 .bu-intro {
     margin-bottom: 20px;
     width: calc(100% - 32px);
@@ -387,7 +379,7 @@ header {
     margin: 0 0 30px 0;
 }
 
-/* ===== EXTRAITS SECTION ===== */
+
 .bu-extraits {
     margin-bottom: 30px;
     padding-left: 16px;
@@ -421,7 +413,6 @@ header {
     font-style: italic;
 }
 
-/* ===== IDÉES CLÉS SECTION ===== */
 .bu-idees-cles {
     margin-bottom: 30px;
     padding-left: 16px;
@@ -497,7 +488,6 @@ header {
     margin-bottom: 8px;
 }
 
-/* ===== MOTS CLÉS SECTION ===== */
 .bu-mots-cles {
     margin-bottom: 30px;
     padding-left: 16px;
@@ -536,7 +526,6 @@ header {
     display: inline-block;
 }
 
-/* ===== FOOTER ===== */
 footer {
     background-color: var(--noir);
     color: var(--blanc);
@@ -733,9 +722,6 @@ footer {
     display: block;
 }
 
-/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
-
-/* Très petits smartphones (320px - 374px) */
 @media (max-width: 374px) {
     .bu-content {
         width: 100%;
@@ -763,7 +749,6 @@ footer {
     }
 }
 
-/* Petits smartphones (375px - 479px) */
 @media (min-width: 375px) and (max-width: 479px) {
     .bu-content {
         width: 100%;
@@ -781,7 +766,6 @@ footer {
     }
 }
 
-/* Smartphones moyens (480px - 599px) */
 @media (min-width: 480px) and (max-width: 599px) {
     .bu-content {
         width: 100%;
@@ -799,7 +783,6 @@ footer {
     }
 }
 
-/* Tablettes portrait et grands smartphones (600px - 767px) */
 @media (min-width: 600px) and (max-width: 767px) {
     .bu-content {
         width: 100%;
@@ -820,7 +803,6 @@ footer {
     }
 }
 
-/* Tablettes et écrans moyens (768px et plus) */
 @media (min-width: 768px) {
     .bu-content {
         width: 100%;

@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Alkalami&family=Inria+Sans:wght@400;700&display=swap');
 @import url('variables.css');
 
-/* Prevent horizontal scroll */
+
 html, body {
     overflow-x: hidden;
     max-width: 100%;
 }
 
-/* Screen Reader Only - Hidden visually but accessible */
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -471,9 +471,7 @@ footer {
     display: block;
 }
 
-/* ===== MEDIA QUERIES - RESPONSIVE POUR SMARTPHONES ===== */
 
-/* Très petits smartphones (320px - 374px) */
 @media (max-width: 374px) {
   .a-propos-article {
     padding: 0 12px 28px 12px;
@@ -496,7 +494,7 @@ footer {
   }
 }
 
-/* Petits smartphones (375px - 479px) */
+
 @media (min-width: 375px) and (max-width: 479px) {
   .a-propos-article {
     padding: 0 16px 30px 16px;
@@ -515,7 +513,7 @@ footer {
   }
 }
 
-/* Smartphones moyens (480px - 599px) */
+
 @media (min-width: 480px) and (max-width: 599px) {
   .a-propos-article {
     padding: 0 20px 35px 20px;
@@ -534,7 +532,6 @@ footer {
   }
 }
 
-/* Tablettes portrait et grands smartphones (600px et plus) */
 @media (min-width: 600px) {
   .a-propos-article {
     padding: 0 32px 40px 32px;
@@ -560,3 +557,5 @@ footer {
   .footer-container {
     max-width: 700px;
     margin: 0 auto;
+  }
+}
