@@ -8,3 +8,4 @@
 - GROUPE : C2
 - URL du site : https://fissionnaire.verguet-bailly.fr/fr/
 - URL FIGMA :https://www.figma.com/design/TMs5QxHx7lE8vqOKWokItN/Maquettes-projet-individuel---Verguet-Bailly-Matias?node-id=71-154&t=2SwzyC62oBxJbAXA-1
+- Support de présentation : https://docs.google.com/presentation/d/1l_OJP-TgK1zBqOIKRRFaHovvTdSKzOM011cgdOZOKuY/edit?usp=sharing 
